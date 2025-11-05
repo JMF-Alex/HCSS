@@ -1,8 +1,17 @@
 <a id="readme-top"></a>
 
-<p align="center"><a href="https://github.com/JMF-Alex/HCSS/graphs/contributors"><img src="https://img.shields.io/github/contributors/JMF-Alex/HCSS?style=for-the-badge" alt="Contributors"></a><a href="https://github.com/JMF-Alex/HCSS/network/members"><img src="https://img.shields.io/github/forks/JMF-Alex/HCSS?style=for-the-badge" alt="Forks"></a><a href="https://github.com/JMF-Alex/HCSS/stargazers"><img src="https://img.shields.io/github/stars/JMF-Alex/HCSS?style=for-the-badge" alt="Stargazers"></a><a href="https://github.com/JMF-Alex/HCSS/issues"><img src="https://img.shields.io/github/issues/JMF-Alex/HCSS?style=for-the-badge" alt="Issues"></a><a href="https://github.com/JMF-Alex/HCSS/blob/main/LICENSE"><img src="https://img.shields.io/github/license/JMF-Alex/HCSS?style=for-the-badge" alt="License"></a></p>
+<p align="center">
+  <a href="https://github.com/JMF-Alex/HCSS/graphs/contributors"><img src="https://img.shields.io/github/contributors/JMF-Alex/HCSS?style=for-the-badge" alt="Contributors"></a>
+  <a href="https://github.com/JMF-Alex/HCSS/network/members"><img src="https://img.shields.io/github/forks/JMF-Alex/HCSS?style=for-the-badge" alt="Forks"></a>
+  <a href="https://github.com/JMF-Alex/HCSS/stargazers"><img src="https://img.shields.io/github/stars/JMF-Alex/HCSS?style=for-the-badge" alt="Stargazers"></a>
+  <a href="https://github.com/JMF-Alex/HCSS/issues"><img src="https://img.shields.io/github/issues/JMF-Alex/HCSS?style=for-the-badge" alt="Issues"></a>
+  <a href="https://github.com/JMF-Alex/HCSS/blob/main/LICENSE"><img src="https://img.shields.io/github/license/JMF-Alex/HCSS?style=for-the-badge" alt="License"></a>
+</p>
 
-<p align="center"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"></a><a href="#"><img src="https://img.shields.io/badge/Size-<1MB-green?style=for-the-badge" alt="Size"></a></p>
+<p align="center">
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Size-<1MB-green?style=for-the-badge" alt="Size"></a>
+</p>
 
 ## Table of Contents
 
