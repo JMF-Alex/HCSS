@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HCSS Documentation</title>
+  <link rel="stylesheet" href="/dist/hcss.min.css">
+</head>
+<body>
+  <div class="flex flex-col min-h-screen">
+    <div class="flex flex-1">
+      <!-- Sidebar Navigation -->
+      <aside class="w-64 bg-secondary border-r border-color overflow-y-auto">
+        <div class="p-5 border-b border-color">
+          <h2 class="m-0 text-2xl font-bold text-accent-primary">HCSS Docs</h2>
+          <p class="m-0 mt-1 text-sm text-muted">v0.1.0</p>
+        </div>
+
+        <!-- Getting Started -->
+        <div class="py-6">
+          <div class="px-5 text-xs font-bold uppercase tracking-wider text-muted mb-3">Getting Started</div>
+          <a href="index.html" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent font-semibold text-accent-primary border-l-accent-primary">Overview</a>
+          <a href="#installation" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Installation</a>
+          <a href="#quick-start" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Quick Start</a>
+        </div>
+
+        <!-- Components -->
+        <div class="py-6 border-t border-color">
+          <div class="px-5 text-xs font-bold uppercase tracking-wider text-muted mb-3">Components</div>
+          <a href="components.html" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">All Components</a>
+          <a href="components.html#buttons" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Buttons</a>
+          <a href="components.html#cards" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Cards</a>
+          <a href="components.html#forms" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Forms & Inputs</a>
+          <a href="components.html#badges" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Badges</a>
+          <a href="components.html#alerts" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Alerts</a>
+          <a href="components.html#navigation" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Navigation</a>
+        </div>
+
+        <!-- Utilities -->
+        <div class="py-6 border-t border-color">
+          <div class="px-5 text-xs font-bold uppercase tracking-wider text-muted mb-3">Utilities</div>
+          <a href="utilities.html" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">All Utilities</a>
+          <a href="utilities.html#spacing" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Spacing</a>
+          <a href="utilities.html#flexbox" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Flexbox</a>
+          <a href="utilities.html#grid" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Grid</a>
+          <a href="utilities.html#typography" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Typography</a>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="flex-1 flex flex-col">
+        <!-- Header -->
+        <header class="bg-primary border-b border-color p-5 flex items-center justify-between">
+          <h1 class="m-0 text-2xl">HCSS Documentation</h1>
+          <button class="btn btn-sm btn-secondary" onclick="toggleTheme()">🌓 Theme</button>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 overflow-y-auto px-8">
+          <div class="max-w-4xl py-12">
+            <!-- Hero Section -->
+            <section class="mb-12 text-center">
+              <h1 class="text-4xl font-bold mb-4 text-accent-primary">Welcome to HCSS</h1>
+              <p class="text-lg text-secondary leading-relaxed max-w-2xl mx-auto">A lightweight, modular CSS framework designed to help you build responsive, modern web interfaces quickly and efficiently.</p>
+            </section>
+
+            <!-- Quick Overview Cards -->
+            <div class="grid grid-cols-2 gap-6 mb-12">
+              <div class="card">
+                <h4 class="mt-0 mb-3 text-accent-primary">⚡ Lightweight</h4>
+                <p>Minimal CSS with maximum functionality. Only includes what you need to build beautiful interfaces.</p>
+              </div>
+              <div class="card">
+                <h4 class="mt-0 mb-3 text-accent-primary">🧩 Modular</h4>
+                <p>Use what you need. Every component and utility is independent and can be used separately.</p>
+              </div>
+              <div class="card">
+                <h4 class="mt-0 mb-3 text-accent-primary">📱 Responsive</h4>
+                <p>Mobile-first approach with responsive utilities built in. Works perfectly on all screen sizes.</p>
+              </div>
+              <div class="card">
+                <h4 class="mt-0 mb-3 text-accent-primary">🎨 Customizable</h4>
+                <p>Easy to customize through SCSS variables. Adapt HCSS to match your brand perfectly.</p>
+              </div>
+            </div>
+
+            <!-- Installation -->
+            <section id="installation">
+              <h2>Installation</h2>
+              <p>Getting started with HCSS is simple. Include the compiled CSS in your HTML file:</p>
+              <pre><code>&lt;link rel="stylesheet" href="/dist/hcss.min.css"&gt;</code></pre>
+              <p>Or install via npm:</p>
+              <pre><code>npm install hcss</code></pre>
+            </section>
+
+            <!-- Quick Start -->
+            <section id="quick-start">
+              <h2>Quick Start</h2>
+              <p>Here's a basic example to get you started:</p>
+              <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="/dist/hcss.min.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;nav class="navbar"&gt;
+    &lt;div class="navbar-brand"&gt;My App&lt;/div&gt;
+  &lt;/nav&gt;
+  
+  &lt;main class="container p-6"&gt;
+    &lt;h1&gt;Hello HCSS&lt;/h1&gt;
+    &lt;button class="btn btn-primary"&gt;Get Started&lt;/button&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </section>
+
+            <!-- Navigation -->
+            <section class="mb-12">
+              <h2>Explore the Documentation</h2>
+              <div class="grid grid-cols-2 gap-6">
+                <div class="card">
+                  <h4 class="mt-0">Components</h4>
+                  <p>Browse all available UI components like buttons, cards, forms, modals, tables, and more.</p>
+                  <a href="components.html" class="btn btn-sm btn-primary btn-text mt-4">View Components →</a>
+                </div>
+                <div class="card">
+                  <h4 class="mt-0">Utilities</h4>
+                  <p>Learn about spacing, flexbox, grid, typography, colors, and layout utility classes.</p>
+                  <a href="utilities.html" class="btn btn-sm btn-primary btn-text mt-4">View Utilities →</a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-secondary border-t border-color p-8 text-center">
+      <p class="m-0 mb-2 font-semibold">HCSS — A Lightweight CSS Framework</p>
+      <p class="m-0 text-sm text-muted">Built with care for modern web development</p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

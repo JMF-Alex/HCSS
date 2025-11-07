@@ -1,0 +1,59 @@
+$spacings: (
+  0: 0,
+  1: var(--spacing-xs),
+  2: var(--spacing-sm),
+  3: var(--spacing-md),
+  4: var(--spacing-lg),
+  5: var(--spacing-xl),
+  6: var(--spacing-2xl),
+  7: var(--spacing-3xl),
+  8: var(--spacing-4xl)
+);
+
+@each $key, $value in $spacings {
+
+  /* ---- MARGIN ---- */
+  .m-#{$key} { margin: $value; }
+
+  /* ---- PADDING ---- */
+  .p-#{$key} { padding: $value; }
+
+  /* ---- GAP ---- */
+  .gap-#{$key} { gap: $value; }
+
+  /* ---- MARGIN LEFT & RIGHT (x) ---- */
+  .mx-#{$key} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+
+  /* ---- MARGIN TOP & BOTTOM (y) ---- */
+  .my-#{$key} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+
+  /* ---- PADDING LEFT & RIGHT (x) ---- */
+  .px-#{$key} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+
+  /* ---- PADDING TOP & BOTTOM (y) ---- */
+  .py-#{$key} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+
+  /* ---- INDIVIDUAL MARGIN ---- */
+  .mt-#{$key} { margin-top: $value; }
+  .mb-#{$key} { margin-bottom: $value; }
+  .ml-#{$key} { margin-left: $value; }
+  .mr-#{$key} { margin-right: $value; }
+
+  /* ---- INDIVIDUAL PADDING ---- */
+  .pt-#{$key} { padding-top: $value; }
+  .pb-#{$key} { padding-bottom: $value; }
+  .pl-#{$key} { padding-left: $value; }
+  .pr-#{$key} { padding-right: $value; }
+}

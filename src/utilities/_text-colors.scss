@@ -1,0 +1,41 @@
+/* ---- TEXT COLOR UTILITIES ---- */
+
+.text-primary {
+  color: var(--text-primary) !important;
+}
+
+.text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+.text-danger {
+  color: var(--accent-danger) !important;
+}
+
+.text-success {
+  color: var(--accent-success) !important;
+}
+
+.text-info {
+  color: var(--accent-info) !important;
+}
+
+.text-warning {
+  color: var(--accent-warning) !important;
+}
+
+.text-accent {
+  color: var(--accent-primary) !important;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}

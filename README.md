@@ -1,11 +1,18 @@
 <a id="readme-top"></a>
 
 <p align="center">
-  <a href="https://github.com/JMF-Alex/HCSS/graphs/contributors"><img src="https://img.shields.io/github/contributors/JMF-Alex/HCSS?style=for-the-badge" alt="Contributors"></a> <a href="https://github.com/JMF-Alex/HCSS/network/members"><img src="https://img.shields.io/github/forks/JMF-Alex/HCSS?style=for-the-badge" alt="Forks"></a> <a href="https://github.com/JMF-Alex/HCSS/stargazers"><img src="https://img.shields.io/github/stars/JMF-Alex/HCSS?style=for-the-badge" alt="Stargazers"></a> <a href="https://github.com/JMF-Alex/HCSS/issues"><img src="https://img.shields.io/github/issues/JMF-Alex/HCSS?style=for-the-badge" alt="Issues"></a> <a href="https://github.com/JMF-Alex/HCSS/blob/main/LICENSE"><img src="https://img.shields.io/github/license/JMF-Alex/HCSS?style=for-the-badge" alt="License"></a>
+  <a href="https://github.com/JMF-Alex/HCSS/graphs/contributors"><img src="https://img.shields.io/github/contributors/JMF-Alex/HCSS?style=for-the-badge" alt="Contributors"></a>
+  <a href="https://github.com/JMF-Alex/HCSS/network/members"><img src="https://img.shields.io/github/forks/JMF-Alex/HCSS?style=for-the-badge" alt="Forks"></a>
+  <a href="https://github.com/JMF-Alex/HCSS/stargazers"><img src="https://img.shields.io/github/stars/JMF-Alex/HCSS?style=for-the-badge" alt="Stargazers"></a>
+  <a href="https://github.com/JMF-Alex/HCSS/issues"><img src="https://img.shields.io/github/issues/JMF-Alex/HCSS?style=for-the-badge" alt="Issues"></a>
+  <a href="https://github.com/JMF-Alex/HCSS/blob/main/LICENSE"><img src="https://img.shields.io/github/license/JMF-Alex/HCSS?style=for-the-badge" alt="License"></a>
 </p>
 
 <p align="center">
-  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white" alt="CSS3"></a> <a href="https://sass-lang.com/"><img src="https://img.shields.io/badge/SCSS%2FSASS-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="SCSS"></a> <a href="https://postcss.org/"><img src="https://img.shields.io/badge/PostCSS-DD3A0A?style=for-the-badge&logo=postcss&logoColor=white" alt="PostCSS"></a> <a href="#"><img src="https://img.shields.io/badge/Size-<1MB-green?style=for-the-badge" alt="Size"></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white" alt="CSS3"></a>
+  <a href="https://sass-lang.com/"><img src="https://img.shields.io/badge/SCSS%2FSASS-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="SCSS"></a>
+  <a href="https://postcss.org/"><img src="https://img.shields.io/badge/PostCSS-DD3A0A?style=for-the-badge&logo=postcss&logoColor=white" alt="PostCSS"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Size-<1MB-green?style=for-the-badge" alt="Size"></a>
 </p>
 
 ## Table of Contents
@@ -78,6 +85,7 @@ Once opened, you can:
 ## Roadmap
 
 - [ ] Upload first version
+- [ ] Finish the docs (in progress)
 
 ## Contributing
 

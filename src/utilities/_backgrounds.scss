@@ -1,0 +1,162 @@
+/* ---- BACKGROUND COLORS ---- */
+
+.bg-primary {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.bg-secondary {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.bg-tertiary {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.bg-quaternary {
+  background-color: var(--bg-quaternary);
+  color: var(--text-primary);
+}
+
+/* ---- ACCENT BACKGROUNDS ---- */
+
+.bg-accent {
+  background-color: var(--accent-primary);
+  color: var(--text-primary);
+}
+
+.bg-success {
+  background-color: var(--accent-success);
+  color: var(--text-primary);
+}
+
+.bg-danger {
+  background-color: var(--accent-danger);
+  color: var(--text-primary);
+}
+
+.bg-info {
+  background-color: var(--accent-info);
+  color: var(--text-primary);
+}
+
+.bg-warning {
+  background-color: var(--accent-warning);
+  color: var(--text-primary);
+}
+
+/* ---- ACCENT LIGHT BACKGROUNDS ---- */
+
+.bg-accent-light {
+  background-color: rgba(99, 102, 241, 0.1);
+  color: var(--accent-primary);
+}
+
+.bg-success-light {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--accent-success);
+}
+
+.bg-danger-light {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--accent-danger);
+}
+
+.bg-info-light {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: var(--accent-info);
+}
+
+.bg-warning-light {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: var(--accent-warning);
+}
+
+/* ---- BACKGROUND GRADIENTS ---- */
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-hover));
+  color: white;
+}
+
+.bg-gradient-success {
+  background: linear-gradient(135deg, var(--accent-success), var(--accent-success-hover));
+  color: white;
+}
+
+.bg-gradient-danger {
+  background: linear-gradient(135deg, var(--accent-danger), var(--accent-danger-hover));
+  color: white;
+}
+
+/* ---- BACKGROUND SIZE & POSITION ---- */
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-left {
+  background-position: left;
+}
+
+.bg-right {
+  background-position: right;
+}
+
+.bg-top {
+  background-position: top;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
+/* ---- BACKGROUND REPEAT ---- */
+
+.bg-repeat {
+  background-repeat: repeat;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-repeat-x {
+  background-repeat: repeat-x;
+}
+
+.bg-repeat-y {
+  background-repeat: repeat-y;
+}
+
+/* ---- BACKGROUND ATTACHMENT ---- */
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-scroll {
+  background-attachment: scroll;
+}
+
+/* ---- SIMPLE BACKGROUNDS ---- */
+
+.bg-white {
+  background-color: white !important;
+  color: var(--text-primary);
+}
+
+.bg-black {
+  background-color: black !important;
+  color: var(--text-primary);
+}

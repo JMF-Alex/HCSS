@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HCSS Components - Complete Reference</title>
+  <link rel="stylesheet" href="/dist/hcss.min.css">
+</head>
+<body>
+  <div class="flex flex-col min-h-screen">
+    <div class="flex flex-1">
+      <!-- Sidebar Navigation -->
+      <aside class="w-64 bg-secondary border-r border-color overflow-y-auto">
+        <div class="p-5 border-b border-color">
+          <h2 class="m-0 text-2xl font-bold text-accent-primary">HCSS Docs</h2>
+          <p class="m-0 mt-1 text-sm text-muted">Components v0.1.0</p>
+        </div>
+
+        <div class="py-6">
+          <div class="px-5 text-xs font-bold uppercase tracking-wider text-muted mb-3">Navigation</div>
+          <a href="index.html" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Overview</a>
+          <a href="components.html" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent font-semibold text-accent-primary border-l-accent-primary">Components</a>
+          <a href="utilities.html" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Utilities</a>
+        </div>
+
+        <div class="py-6 border-t border-color">
+          <div class="px-5 text-xs font-bold uppercase tracking-wider text-muted mb-3">All Components</div>
+          <a href="#buttons" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Buttons</a>
+          <a href="#badges" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Badges</a>
+          <a href="#cards" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Cards</a>
+          <a href="#alerts" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Alerts</a>
+          <a href="#avatars" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Avatars</a>
+          <a href="#forms" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Forms</a>
+          <a href="#inputs" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Inputs</a>
+          <a href="#tables" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Tables</a>
+          <a href="#modals" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Modals</a>
+          <a href="#navbar" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Navbar</a>
+          <a href="#tabs" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Tabs</a>
+          <a href="#breadcrumbs" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Breadcrumbs</a>
+          <a href="#pagination" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Pagination</a>
+          <a href="#dropdowns" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Dropdowns</a>
+          <a href="#progress" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Progress</a>
+          <a href="#spinners" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Spinners</a>
+          <a href="#stats" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Stats</a>
+          <a href="#toasts" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Toasts</a>
+          <a href="#tooltips" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Tooltips</a>
+          <a href="#dividers" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Dividers</a>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="flex-1 flex flex-col">
+        <header class="bg-primary border-b border-color p-5 flex items-center justify-between">
+          <h1 class="m-0 text-2xl">Components Reference</h1>
+          <button class="btn btn-sm btn-secondary" onclick="toggleTheme()">🌓 Theme</button>
+        </header>
+
+        <main class="flex-1 overflow-y-auto px-8">
+          <div class="max-w-5xl py-12">
+
+            <!-- BUTTONS -->
+            <section id="buttons" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Buttons</h2>
+              <p class="text-secondary mb-6">Interactive button component with multiple variants, sizes, and states.</p>
+
+              <div class="card mb-6">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Base Class</h3>
+                <pre><code>.btn</code></pre>
+              </div>
+
+              <div class="card mb-6">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Variants</h3>
+                <div class="mb-4">
+                  <div class="text-sm text-muted mb-2">Solid Variants:</div>
+                  <div class="flex gap-3 flex-wrap items-center">
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-success">Success</button>
+                    <button class="btn btn-danger">Danger</button>
+                    <button class="btn btn-info">Info</button>
+                    <button class="btn btn-warning">Warning</button>
+                  </div>
+                  <div class="mt-3 text-xs text-muted">Classes: .btn-primary | .btn-secondary | .btn-success | .btn-danger | .btn-info | .btn-warning</div>
+                </div>
+
+                <div class="my-6 h-px bg-border-color"></div>
+
+                <div class="mb-4">
+                  <div class="text-sm text-muted mb-2">Outline Variants (add .btn-outline):</div>
+                  <div class="flex gap-3 flex-wrap items-center">
+                    <button class="btn btn-outline btn-primary">Primary</button>
+                    <button class="btn btn-outline btn-secondary">Secondary</button>
+                    <button class="btn btn-outline btn-success">Success</button>
+                    <button class="btn btn-outline btn-danger">Danger</button>
+                  </div>
+                  <div class="mt-3 text-xs text-muted">Usage: .btn .btn-outline .btn-primary</div>
+                </div>
+
+                <div class="my-6 h-px bg-border-color"></div>
+
+                <div class="mb-4">
+                  <div class="text-sm text-muted mb-2">Text Variants (add .btn-text):</div>
+                  <div class="flex gap-3 flex-wrap items-center">
+                    <button class="btn btn-text btn-primary">Primary</button>
+                    <button class="btn btn-text btn-secondary">Secondary</button>
+                    <button class="btn btn-text btn-success">Success</button>
+                  </div>
+                  <div class="mt-3 text-xs text-muted">Usage: .btn .btn-text .btn-primary</div>
+                </div>
+              </div>
+
+              <div class="card mb-6">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Sizes</h3>
+                <div class="flex gap-3 flex-wrap items-center">
+                  <button class="btn btn-sm btn-primary">Small</button>
+                  <button class="btn btn-primary">Default (md)</button>
+                  <button class="btn btn-lg btn-primary">Large</button>
+                  <button class="btn btn-xl btn-primary">Extra Large</button>
+                div>
+                <div class="mt-3 text-xs text-muted">Classes: .btn-sm | .btn (default) | .btn-lg | .btn-xl</div>
+              </div>
+
+              <div class="card">
+                <h3 class="mt-0 text-lg font-semibold mb-4">States</h3>
+                <div class="flex gap-3 flex-wrap items-center">
+                  <button class="btn btn-primary">Normal</button>
+                  <button class="btn btn-primary" disabled>Disabled</button>
+                  <button class="btn btn-primary btn-loading">Loading</button>
+                </div>
+                <div class="mt-3 text-xs text-muted">Use disabled attribute or .btn-loading class</div>
+              </div>
+            </section>
+
+            <!-- BADGES -->
+            <section id="badges" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Badges</h2>
+              <p class="text-secondary mb-6">Small label components for categorization and tagging.</p>
+
+              <div class="card mb-6">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Base Class</h3>
+                <pre><code>.badge</code></pre>
+              </div>
+
+              <div class="card mb-6">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Variants</h3>
+                <div class="mb-4">
+                  <div class="text-sm text-muted mb-2">Light Variants (default):</div>
+                  <div class="flex gap-2 flex-wrap">
+                    <span class="badge badge-primary">Primary</span>
+                    <span class="badge badge-secondary">Secondary</span>
+                    <span class="badge badge-success">Success</span>
+                    <span class="badge badge-danger">Danger</span>
+                    <span class="badge badge-info">Info</span>
+                    <span class="badge badge-warning">Warning</span>
+                  </div>
+                  <div class="mt-3 text-xs text-muted">Classes: .badge-primary | .badge-secondary | .badge-success | .badge-danger | .badge-info | .badge-warning</div>
+                </div>
+
+                <div class="my-6 h-px bg-border-color"></div>
+
+                <div class="mb-4">
+                  <div class="text-sm text-muted mb-2">Solid Variants (add .badge-solid):</div>
+                  <div class="flex gap-2 flex-wrap">
+                    <span class="badge badge-solid badge-primary">Primary</span>
+                    <span class="badge badge-solid badge-success">Success</span>
+                    <span class="badge badge-solid badge-danger">Danger</span>
+                  </div>
+                  <div class="mt-3 text-xs text-muted">Usage: .badge .badge-solid .badge-primary</div>
+                </div>
+
+                <div class="my-6 h-px bg-border-color"></div>
+
+                <div class="mb-4">
+                  <div class="text-sm text-muted mb-2">Outline Variants (add .badge-outline):</div>
+                  <div class="flex gap-2 flex-wrap">
+                    <span class="badge badge-outline badge-primary">Primary</span>
+                    <span class="badge badge-outline badge-success">Success</span>
+                    <span class="badge badge-outline badge-danger">Danger</span>
+                  </div>
+                </div>
+
+                <div class="my-6 h-px bg-border-color"></div>
+
+                <div class="mb-4">
+                  <div class="text-sm text-muted mb-2">Sizes:</div>
+                  <div class="flex gap-2 flex-wrap items-center">
+                    <span class="badge badge-sm badge-primary">Small</span>
+                    <span class="badge badge-primary">Default (md)</span>
+                    <span class="badge badge-lg badge-primary">Large</span>
+                  </div>
+                  <div class="mt-3 text-xs text-muted">Classes: .badge-sm | .badge (default) | .badge-lg</div>
+                </div>
+
+                <div class="my-6 h-px bg-border-color"></div>
+
+                <div class="mb-4">
+                  <div class="text-sm text-muted mb-2">With Dot (.badge-dot):</div>
+                  <div class="flex gap-2 flex-wrap items-center">
+                    <span class="badge badge-dot badge-primary">Primary</span>
+                    <span class="badge badge-dot badge-success">Success</span>
+                    <span class="badge badge-dot badge-danger">Danger</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- CARDS -->
+            <section id="cards" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Cards</h2>
+              <p class="text-secondary mb-6">Flexible container component for grouping related content.</p>
+
+              <div class="card mb-6">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Base Class</h3>
+                <pre><code>.card</code></pre>
+              </div>
+
+              <div class="card mb-6">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Variants</h3>
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="card">
+                    <h4 class="m-0 text-sm font-semibold text-accent-primary mb-2">.card</h4>
+                    <p class="m-0 text-xs text-muted">Default card with border</p>
+                  </div>
+                  <div class="card card-elevated">
+                    <h4 class="m-0 text-sm font-semibold text-accent-primary mb-2">.card-elevated</h4>
+                    <p class="m-0 text-xs text-muted">Elevated with shadow</p>
+                  </div>
+                  <div class="card card-filled">
+                    <h4 class="m-0 text-sm font-semibold text-accent-primary mb-2">.card-filled</h4>
+                    <p class="m-0 text-xs text-muted">Filled background</p>
+                  </div>
+                  <div class="card card-outline">
+                    <h4 class="m-0 text-sm font-semibold text-accent-primary mb-2">.card-outline</h4>
+                    <p class="m-0 text-xs text-muted">Transparent with outline</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-6">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Sizes</h3>
+                <div class="grid grid-cols-3 gap-4">
+                  <div class="card card-sm">
+                    <p class="m-0 text-xs">.card-sm</p>
+                  </div>
+                  <div class="card">
+                    <p class="m-0 text-sm">.card (default)</p>
+                  </div>
+                  <div class="card card-lg">
+                    <p class="m-0 text-base">.card-lg</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-6">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Card Sections</h3>
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-header-title">Card Title</h3>
+                    <p class="card-header-subtitle">Optional subtitle</p>
+                  </div>
+                  <div class="card-body">
+                    <p class="m-0">Card content goes here. Use .card-body for main content area.</p>
+                  </div>
+                  <div class="card-footer full-width">
+                    <button class="btn btn-sm btn-secondary">Cancel</button>
+                    <button class="btn btn-sm btn-primary">Submit</button>
+                  </div>
+                </div>
+                <div class="mt-3 text-xs text-muted">Classes: .card-header | .card-body | .card-footer</div>
+              </div>
+            </section>
+
+            <!-- ALERTS -->
+            <section id="alerts" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Alerts</h2>
+              <p class="text-secondary mb-6">Alert notifications for displaying important messages.</p>
+
+              <div class="card mb-6">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Base Class</h3>
+                <pre><code>.alert</code></pre>
+              </div>
+
+              <div class="card">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Variants</h3>
+
+                <div class="alert alert-info mb-3">
+                  <div class="alert-icon">ℹ️</div>
+                  <div>
+                    <div class="alert-title">Info Alert</div>
+                    <div class="alert-content"><p>This is an informational alert message. Class: .alert-info</p></div>
+                  </div>
+                </div>
+
+                <div class="alert alert-success mb-3">
+                  <div class="alert-icon">✓</div>
+                  <div>
+                    <div class="alert-title">Success Alert</div>
+                    <div class="alert-content"><p>Operation completed successfully. Class: .alert-success</p></div>
+                  </div>
+                </div>
+
+                <div class="alert alert-warning mb-3">
+                  <div class="alert-icon">⚠️</div>
+                  <div>
+                    <div class="alert-title">Warning Alert</div>
+                    <div class="alert-content"><p>Please pay attention to this warning. Class: .alert-warning</p></div>
+                  </div>
+                </div>
+
+                <div class="alert alert-danger">
+                  <div class="alert-icon">✕</div>
+                  <div>
+                    <div class="alert-title">Error Alert</div>
+                    <div class="alert-content"><p>An error has occurred. Class: .alert-danger</p></div>
+                  </div>
+                </div>
+
+                <div class="mt-6 text-xs text-muted">
+                  Variants: .alert-info | .alert-success | .alert-warning | .alert-danger<br>
+                  Add .alert-solid for solid backgrounds | Add .alert-outline for outline style
+                </div>
+              </div>
+            </section>
+
+            <!-- AVATARS -->
+            <section id="avatars" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Avatars</h2>
+              <p class="text-secondary mb-6">Avatar component for displaying user images and initials.</p>
+
+              <div class="card">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Sizes</h3>
+                <div class="flex gap-4 items-center mb-6">
+                  <div class="text-center">
+                    <div class="avatar avatar-xs mb-2">JD</div>
+                    <div class="text-xs text-muted">.avatar-xs</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="avatar avatar-sm mb-2">JD</div>
+                    <div class="text-xs text-muted">.avatar-sm</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="avatar avatar-md mb-2">JD</div>
+                    <div class="text-xs text-muted">.avatar-md</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="avatar avatar-lg mb-2">JD</div>
+                    <div class="text-xs text-muted">.avatar-lg</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="avatar avatar-xl mb-2">JD</div>
+                    <div class="text-xs text-muted">.avatar-xl</div>
+                  </div>
+                </div>
+
+                <h4 class="text-sm font-semibold text-accent-primary mb-3">Color Variants</h4>
+                <div class="flex gap-4 items-center mb-6">
+                  <div class="text-center">
+                    <div class="avatar avatar-md avatar-primary mb-2">JD</div>
+                    <div class="text-xs text-muted">.avatar-primary</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="avatar avatar-md avatar-success mb-2">JD</div>
+                    <div class="text-xs text-muted">.avatar-success</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="avatar avatar-md avatar-danger mb-2">JD</div>
+                    <div class="text-xs text-muted">.avatar-danger</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="avatar avatar-md avatar-info mb-2">JD</div>
+                    <div class="text-xs text-muted">.avatar-info</div>
+                  </div>
+                </div>
+
+                <h4 class="text-sm font-semibold text-accent-primary mb-3">With Badge</h4>
+                <div class="avatar-badge avatar-lg mb-4">
+                  <div class="avatar avatar-lg avatar-primary">JD</div>
+                  <div class="avatar-status"></div>
+                </div>
+                <div class="text-xs text-muted">Use .avatar-badge wrapper and .avatar-status div. Add .offline or .busy classes to status</div>
+              </div>
+            </section>
+
+            <!-- FORMS -->
+            <section id="forms" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Forms</h2>
+              <p class="text-secondary mb-6">Form container and grouping components.</p>
+
+              <div class="card">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Form Container</h3>
+                <pre><code>.form-container | .form-container.form-sm | .form-container.form-lg</code></pre>
+
+                <div class="my-6 h-px bg-border-color"></div>
+
+                <h3 class="text-lg font-semibold mb-4">Form Groups</h3>
+                <pre><code>.form-group - Vertical layout
+.form-group-inline - Horizontal layout
+.form-section - Section divider
+.form-row - Grid row for inputs
+.form-actions - Action buttons group</code></pre>
+
+                <div class="my-6 h-px bg-border-color"></div>
+
+                <h3 class="text-lg font-semibold mb-4">Labels & Help Text</h3>
+                <div class="form-group">
+                  <label class="required">Required Field</label>
+                  <input type="text" placeholder="Enter text">
+                  <div class="form-help">This is helper text</div>
+                </div>
+
+                <div class="form-group">
+                  <label class="optional">Optional Field</label>
+                  <input type="text" placeholder="Enter text">
+                </div>
+
+                <div class="form-group">
+                  <label for="succes-input">Field with Error</label>
+                  <input type="text" id="succes-input" class="input-error" value="Invalid input">
+                  <div class="form-error">This field has an error</div>
+                </div>
+              </div>
+            </section>
+
+            <!-- INPUTS -->
+            <section id="inputs" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Inputs</h2>
+              <p class="text-secondary mb-6">Input fields, textareas, selects, and form controls.</p>
+
+              <div class="card mb-6">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Text Input</h3>
+                <input type="text" placeholder="Enter text here...">
+                <div class="mt-3 text-xs text-muted">Default HTML input element styled with HCSS</div>
+              </div>
+
+              <div class="card mb-6">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Input States</h3>
+                <div class="mb-3">
+                  <label>Normal:</label>
+                  <input type="text" placeholder="Type here..." value="Normal state">
+                </div>
+                <div class="mb-3">
+                    <label for="success-input">Success:</label>
+                    <input type="text" id="success-input" class="input-success" value="Success state">
+                </div>
+                <div class="mb-3">
+                  <label>Error:</label>
+                  <input type="text" class="input-error" placeholder="Error state" value="Invalid">
+                </div>
+                <div>
+                  <label>Disabled:</label>
+                  <input type="text" placeholder="Disabled..." disabled>
+                </div>
+              </div>
+
+              <div class="card mb-6">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Textarea</h3>
+                <textarea placeholder="Enter multiple lines..."></textarea>
+                <div class="mt-3 text-xs text-muted">Classes: .textarea-sm | .textarea-lg | .textarea-auto</div>
+              </div>
+
+              <div class="card mb-6">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Select</h3>
+                <label for="select-demo">Choose an option:</label>
+                <select id="select-demo">
+                    <option value="">Select an option</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+              </div>
+
+              <div class="card mb-6">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Input Group (Prefix/Suffix)</h3>
+                <div class="input-group">
+                  <span class="input-group-prefix">$</span>
+                  <input type="text" placeholder="Amount">
+                  <span class="input-group-suffix">.00</span>
+                </div>
+                <div class="mt-3 text-xs text-muted">Use .input-group with .input-group-prefix and .input-group-suffix</div>
+              </div>
+
+              <div class="card">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Checkboxes & Radios</h3>
+                <div class="checkbox-group mb-4">
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="check1">
+                    <label for="check1">Checkbox option 1</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="check2">
+                    <label for="check2">Checkbox option 2</label>
+                  </div>
+                </div>
+
+                <div class="radio-group">
+                  <div class="radio-item">
+                    <input type="radio" name="radio" id="radio1">
+                    <label for="radio1">Radio option 1</label>
+                  </div>
+                  <div class="radio-item">
+                    <input type="radio" name="radio" id="radio2">
+                    <label for="radio2">Radio option 2</label>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- TABLES -->
+            <section id="tables" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Tables</h2>
+              <p class="text-secondary mb-6">Responsive table styling with various options.</p>
+
+              <div class="card">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Basic Table</h3>
+                <div class="table-responsive">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td><span class="badge badge-solid badge-success">Active</span></td>
+                        <td>2024-01-15</td>
+                      </tr>
+                      <tr>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td><span class="badge badge-solid badge-warning">Pending</span></td>
+                        <td>2024-01-16</td>
+                      </tr>
+                      <tr>
+                        <td>Mike Johnson</td>
+                        <td>mike@example.com</td>
+                        <td><span class="badge badge-solid badge-danger">Inactive</span></td>
+                        <td>2024-01-17</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="mt-3 text-xs text-muted">Classes: .table-striped | .table-hover | .table-compact | .table-spacious</div>
+              </div>
+            </section>
+
+            <!-- MODALS -->
+            <section id="modals" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Modals</h2>
+              <p class="text-secondary mb-6">Modal dialog component for displaying overlay content.</p>
+
+              <div class="card">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Modal Structure</h3>
+                <pre><code>&lt;div class="modal-overlay active"&gt;
+  &lt;div class="modal modal-sm"&gt;
+    &lt;div class="modal-header"&gt;
+      &lt;h2 class="modal-title"&gt;Modal Title&lt;/h2&gt;
+      &lt;button class="modal-close"&gt;×&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="modal-body"&gt;
+      Modal content goes here
+    &lt;/div&gt;
+    &lt;div class="modal-footer"&gt;
+      &lt;button class="btn btn-secondary"&gt;Cancel&lt;/button&gt;
+      &lt;button class="btn btn-primary"&gt;Confirm&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <div class="mt-3 text-xs text-muted">Sizes: .modal-sm | .modal (default) | .modal-lg | .modal-xl</div>
+              </div>
+            </section>
+
+            <!-- NAVBAR -->
+            <section id="navbar" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Navbar</h2>
+              <p class="text-secondary mb-6">Navigation bar component with responsive menu.</p>
+
+              <div class="card">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Base Classes</h3>
+                <pre><code>.navbar - Main container
+.navbar-brand - Brand/logo area
+.navbar-menu - Menu items container
+.navbar-link - Individual link
+.navbar-actions - Right-side actions
+.navbar-toggle - Mobile hamburger menu</code></pre>
+
+                <div class="mt-6 h-px bg-border-color"></div>
+
+                <h4 class="text-sm font-semibold text-accent-primary mt-6 mb-3">Example Navbar</h4>
+                <nav class="navbar">
+                  <div class="navbar-brand">HCSS</div>
+                  <div class="navbar-menu">
+                    <a class="navbar-link" href="#">Home</a>
+                    <a class="navbar-link" href="#">Docs</a>
+                    <a class="navbar-link" href="#">Components</a>
+                  </div>
+                  <div class="navbar-actions">
+                    <button class="btn btn-sm btn-primary">Sign In</button>
+                  </div>
+                </nav>
+              </div>
+            </section>
+
+            <!-- TABS -->
+            <section id="tabs" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Tabs</h2>
+              <p class="text-secondary mb-6">Tabbed interface component for organizing content.</p>
+
+              <div class="card">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Tab Structure</h3>
+                <pre><code>&lt;div class="tabs"&gt;
+  &lt;div class="tabs-header"&gt;
+    &lt;button class="tab active"&gt;Tab 1&lt;/button&gt;
+    &lt;button class="tab"&gt;Tab 2&lt;/button&gt;
+    &lt;button class="tab"&gt;Tab 3&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="tabs-content"&gt;
+    &lt;div class="tab-panel active"&gt;Content 1&lt;/div&gt;
+    &lt;div class="tab-panel"&gt;Content 2&lt;/div&gt;
+    &lt;div class="tab-panel"&gt;Content 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <div class="mt-3 text-xs text-muted">Add .tabs-header-vertical for vertical tabs</div>
+              </div>
+            </section>
+
+            <!-- BREADCRUMBS -->
+            <section id="breadcrumbs" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Breadcrumbs</h2>
+              <p class="text-secondary mb-6">Breadcrumb navigation component.</p>
+
+              <div class="card">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Basic Breadcrumb</h3>
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Components</a></li>
+                  <li class="breadcrumb-item"><a href="#">Breadcrumbs</a></li>
+                  <li class="breadcrumb-item active">Current Page</li>
+                </ul>
+
+                <div class="my-6 h-px bg-border-color"></div>
+
+                <h4 class="text-sm font-semibold text-accent-primary mb-3">Separator Variants</h4>
+                <div class="mb-3">
+                  <ul class="breadcrumb">
+                    <li class="breadcrumb-item breadcrumb-separator-arrow"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item breadcrumb-separator-arrow"><a href="#">Components</a></li>
+                    <li class="breadcrumb-item breadcrumb-separator-arrow active">Breadcrumbs</li>
+                  </ul>
+                  <div class="text-xs text-muted">.breadcrumb-separator-arrow</div>
+                </div>
+
+                <div class="mb-3">
+                  <ul class="breadcrumb">
+                    <li class="breadcrumb-item breadcrumb-separator-dot"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item breadcrumb-separator-dot"><a href="#">Components</a></li>
+                    <li class="breadcrumb-item breadcrumb-separator-dot active">Breadcrumbs</li>
+                  </ul>
+                  <div class="text-xs text-muted">.breadcrumb-separator-dot</div>
+                </div>
+              </div>
+            </section>
+
+            <!-- PAGINATION -->
+            <section id="pagination" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Pagination</h2>
+              <p class="text-secondary mb-6">Pagination controls for navigation.</p>
+
+              <div class="card">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Basic Pagination</h3>
+                <div class="pagination">
+                  <span class="pagination-item disabled">&larr; Previous</span>
+                  <span class="pagination-item active">1</span>
+                  <a href="#" class="pagination-item">2</a>
+                  <a href="#" class="pagination-item">3</a>
+                  <a href="#" class="pagination-item">4</a>
+                  <a href="#" class="pagination-item">Next →</a>
+                </div>
+                <div class="mt-3 text-xs text-muted">Use .active class for current page, .disabled for inactive links</div>
+              </div>
+            </section>
+
+            <!-- DROPDOWNS -->
+            <section id="dropdowns" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Dropdowns</h2>
+              <p class="text-secondary mb-6">Dropdown menu component.</p>
+
+              <div class="card">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Dropdown Structure</h3>
+                <pre><code>&lt;div class="dropdown"&gt;
+  &lt;button class="btn btn-secondary dropdown-trigger"&gt;Menu&lt;/button&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;li&gt;&lt;a href="#" class="dropdown-item"&gt;Action 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" class="dropdown-item"&gt;Action 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="dropdown-divider"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" class="dropdown-item"&gt;Action 3&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                <div class="mt-3 text-xs text-muted">Use .active class on .dropdown-menu to show. Position variants: .dropdown-menu-right | .dropdown-menu-center</div>
+              </div>
+            </section>
+
+            <!-- PROGRESS -->
+            <section id="progress" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Progress</h2>
+              <p class="text-secondary mb-6">Progress bar component showing completion status.</p>
+
+              <div class="card">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Basic Progress Bar</h3>
+                <div class="progress progress-primary">
+                  <div class="progress-bar" style="width: 45%"></div>
+                </div>
+
+                <div class="my-6 h-px bg-border-color"></div>
+
+                <h4 class="text-sm font-semibold text-accent-primary mb-3">Color Variants</h4>
+                <div class="mb-3">
+                  <div class="progress progress-success mb-2">
+                    <div class="progress-bar" style="width: 75%"></div>
+                  </div>
+                  <div class="text-xs text-muted">Success (75%)</div>
+                </div>
+
+                <div class="mb-3">
+                  <div class="progress progress-danger mb-2">
+                    <div class="progress-bar" style="width: 30%"></div>
+                  </div>
+                  <div class="text-xs text-muted">Danger (30%)</div>
+                </div>
+
+                <div class="mb-3">
+                  <div class="progress progress-warning mb-2">
+                    <div class="progress-bar" style="width: 60%"></div>
+                  </div>
+                  <div class="text-xs text-muted">Warning (60%)</div>
+                </div>
+
+                <div class="my-6 h-px bg-border-color"></div>
+
+                <h4 class="text-sm font-semibold text-accent-primary mb-3">Sizes</h4>
+                <div class="mb-2">
+                  <div class="progress progress-sm mb-1">
+                    <div class="progress-bar" style="width: 50%"></div>
+                  </div>
+                  <div class="text-xs text-muted">.progress-sm</div>
+                </div>
+
+                <div class="mb-2">
+                  <div class="progress progress-md mb-1">
+                    <div class="progress-bar" style="width: 50%"></div>
+                  </div>
+                  <div class="text-xs text-muted">.progress-md (default)</div>
+                </div>
+
+                <div class="mb-2">
+                  <div class="progress progress-lg mb-1">
+                    <div class="progress-bar" style="width: 50%"></div>
+                  </div>
+                  <div class="text-xs text-muted">.progress-lg</div>
+                </div>
+              </div>
+            </section>
+
+            <!-- SPINNERS -->
+            <section id="spinners" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Spinners & Loaders</h2>
+              <p class="text-secondary mb-6">Loading spinner animations.</p>
+
+              <div class="card">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Basic Spinner</h3>
+                <div class="flex gap-6 items-center">
+                  <div class="spinner"></div>
+                  <div class="text-xs text-muted">.spinner</div>
+                </div>
+
+                <div class="my-6 h-px bg-border-color"></div>
+
+                <h4 class="text-sm font-semibold text-accent-primary mb-3">Sizes</h4>
+                <div class="flex gap-6 items-center">
+                  <div>
+                    <div class="spinner spinner-sm"></div>
+                    <div class="text-xs text-muted mt-2">.spinner-sm</div>
+                  </div>
+                  <div>
+                    <div class="spinner spinner-md"></div>
+                    <div class="text-xs text-muted mt-2">.spinner-md</div>
+                  </div>
+                  <div>
+                    <div class="spinner spinner-lg"></div>
+                    <div class="text-xs text-muted mt-2">.spinner-lg</div>
+                  </div>
+                </div>
+
+                <div class="my-6 h-px bg-border-color"></div>
+
+                <h4 class="text-sm font-semibold text-accent-primary mb-3">Color Variants</h4>
+                <div class="flex gap-6 items-center">
+                  <div>
+                    <div class="spinner spinner-primary"></div>
+                    <div class="text-xs text-muted mt-2">.spinner-primary</div>
+                  </div>
+                  <div>
+                    <div class="spinner spinner-success"></div>
+                    <div class="text-xs text-muted mt-2">.spinner-success</div>
+                  </div>
+                  <div>
+                    <div class="spinner spinner-danger"></div>
+                    <div class="text-xs text-muted mt-2">.spinner-danger</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- STATS -->
+            <section id="stats" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Stats</h2>
+              <p class="text-secondary mb-6">Stat card component for displaying key metrics.</p>
+
+              <div class="card">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Stat Cards</h3>
+                <div class="stat-grid-2">
+                  <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-value">$24,500</div>
+                    <div class="stat-label">Total Revenue</div>
+                    <div class="stat-trend positive">+12.5% from last month</div>
+                  </div>
+
+                  <div class="divider"></div>
+
+                  <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-value">3,240</div>
+                    <div class="stat-label">Active Users</div>
+                    <div class="stat-trend negative">-2.1% from last month</div>
+                  </div>
+                </div>
+                <div class="mt-3 text-xs text-muted">Classes: .stat-grid | .stat-grid-2 | .stat-grid-3 | .stat-grid-4</div>
+              </div>
+            </section>
+
+            <!-- TOASTS -->
+            <section id="toasts" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Toasts & Notifications</h2>
+              <p class="text-secondary mb-6">Toast notification component for transient messages.</p>
+
+              <div class="card">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Toast Structure</h3>
+                <pre><code>&lt;div class="toast-container toast-container-top-right"&gt;
+  &lt;div class="toast toast-success"&gt;
+    &lt;div class="toast-content"&gt;
+      &lt;div class="toast-title"&gt;Success&lt;/div&gt;
+      &lt;div class="toast-message"&gt;Operation completed successfully&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="toast-close"&gt;×&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <div class="mt-3 text-xs text-muted">Position variants: .toast-container-top-left | .toast-container-top-right | .toast-container-bottom-left | .toast-container-bottom-right | .toast-container-top-center | .toast-container-bottom-center<br>Toast variants: .toast-success | .toast-danger | .toast-info | .toast-warning</div>
+              </div>
+            </section>
+
+            <!-- TOOLTIPS -->
+            <section id="tooltips" class="mb-16">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Tooltips</h2>
+              <p class="text-secondary mb-6">Tooltip component for showing helpful information.</p>
+
+              <div class="card">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Tooltip Positions</h3>
+                <div class="flex gap-6 flex-wrap mb-6">
+                  <div class="tooltip-trigger">
+                    <span class="text-accent-primary font-semibold cursor-help">Hover me (top)</span>
+                    <div class="tooltip tooltip-top">I'm a tooltip!</div>
+                  </div>
+                  <div class="tooltip-trigger">
+                    <span class="text-accent-primary font-semibold cursor-help">Hover me (bottom)</span>
+                    <div class="tooltip tooltip-bottom">I'm a tooltip!</div>
+                  </div>
+                  <div class="tooltip-trigger">
+                    <span class="text-accent-primary font-semibold cursor-help">Hover me (left)</span>
+                    <div class="tooltip tooltip-left">Tooltip on left</div>
+                  </div>
+                  <div class="tooltip-trigger">
+                    <span class="text-accent-primary font-semibold cursor-help">Hover me (right)</span>
+                    <div class="tooltip tooltip-right">Tooltip on right</div>
+                  </div>
+                </div>
+                <div class="text-xs text-muted">Classes: .tooltip-top | .tooltip-bottom | .tooltip-left | .tooltip-right<br>Variants: .tooltip-dark | .tooltip-primary | .tooltip-success</div>
+              </div>
+            </section>
+
+            <!-- DIVIDERS -->
+            <section id="dividers" class="mb-16 pb-12">
+              <h2 class="text-3xl font-bold mb-2 text-accent-primary">Dividers</h2>
+              <p class="text-secondary mb-6">Divider component for visual separation of content.</p>
+
+              <div class="card">
+                <h3 class="mt-0 text-lg font-semibold mb-4">Horizontal Dividers</h3>
+                
+                <div class="mb-6">
+                  <p class="text-sm text-muted mb-2">Solid divider (.divider):</p>
+                  <hr class="divider">
+                </div>
+
+                <div class="mb-6">
+                  <p class="text-sm text-muted mb-2">Thick divider (.divider-thick):</p>
+                  <hr class="divider divider-thick">
+                </div>
+
+                <div class="mb-6">
+                  <p class="text-sm text-muted mb-2">Dashed divider (.divider-dashed):</p>
+                  <hr class="divider divider-dashed">
+                </div>
+
+                <div class="mb-6">
+                  <p class="text-sm text-muted mb-2">Dotted divider (.divider-dotted):</p>
+                  <hr class="divider divider-dotted">
+                </div>
+
+                <div class="my-6 h-px bg-border-color"></div>
+
+                <h4 class="text-sm font-semibold text-accent-primary mb-3">Colored Dividers</h4>
+                
+                <div class="mb-3">
+                  <hr class="divider divider-primary">
+                </div>
+                <div class="mb-3">
+                  <hr class="divider divider-success">
+                </div>
+                <div class="mb-3">
+                  <hr class="divider divider-danger">
+                </div>
+
+                <div class="my-6 h-px bg-border-color"></div>
+
+                <h4 class="text-sm font-semibold text-accent-primary mb-3">Spacing Sizes</h4>
+                <pre><code>.divider-sm - Small margin
+.divider-md - Medium margin (default)
+.divider-lg - Large margin
+.divider-xl - Extra large margin</code></pre>
+
+                <div class="my-6 h-px bg-border-color"></div>
+
+                <h4 class="text-sm font-semibold text-accent-primary mb-3">Vertical Divider</h4>
+                <div class="flex items-center gap-4">
+                  <span>Item 1</span>
+                  <div class="divider-vertical"></div>
+                  <span>Item 2</span>
+                </div>
+                <div class="mt-3 text-xs text-muted">Class: .divider-vertical</div>
+              </div>
+            </section>
+
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <footer class="bg-secondary border-t border-color p-8 text-center w-full">
+      <p class="m-0 mb-2 font-semibold">HCSS Components Reference</p>
+      <p class="m-0 text-sm text-muted">Explore all available components with examples</p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

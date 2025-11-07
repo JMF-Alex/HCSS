@@ -1,0 +1,43 @@
+/* ---- CORE IMPORTS ---- */
+@use "./core/reset";
+@use "./core/variables" as *;
+@use "./core/base";
+
+/* ---- UTILITIES IMPORTS ---- */
+@use "./utilities/helpers";
+@use "./utilities/spacing";
+@use "./utilities/flexbox";
+@use "./utilities/grid";
+@use "./utilities/text";
+@use "./utilities/text-colors";
+@use "./utilities/backgrounds";
+@use "./utilities/containers";
+@use "./utilities/sections";
+@use "./utilities/layout";
+@use "./utilities/rounded";
+@use "./utilities/borders";
+@use "./utilities/sizing";
+@use "./utilities/shadows";
+@use "./utilities/opacity";
+
+/* ---- COMPONENTS IMPORTS ---- */
+@use "./components/buttons";
+@use "./components/cards";
+@use "./components/forms";
+@use "./components/inputs";
+@use "./components/badges";
+@use "./components/alerts";
+@use "./components/modals";
+@use "./components/tables";
+@use "./components/navigation";
+@use "./components/toasts";
+@use "./components/dropdowns";
+@use "./components/pagination";
+@use "./components/spinners";
+@use "./components/tabs";
+@use "./components/breadcrumbs";
+@use "./components/progress";
+@use "./components/avatars";
+@use "./components/stats";
+@use "./components/tooltips";
+@use "./components/dividers";

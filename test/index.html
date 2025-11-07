@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HCSS - Test</title>
+  <link rel="stylesheet" href="../dist/hcss.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="navbar-brand mr-4">
+      <span class="text-lg font-bold">HCSS</span>
+    </div>
+    <ul class="navbar-menu">
+      <li class="navbar-item border-b rounded-md"><a href="#buttons" class="navbar-link active">Buttons</a></li>
+      <li class="navbar-item"><a href="#cards" class="navbar-link">Cards</a></li>
+      <li class="navbar-item"><a href="#forms" class="navbar-link">Forms</a></li>
+      <li class="navbar-item"><a href="#tables" class="navbar-link">Tables</a></li>
+      <li class="navbar-item"><a href="#utilities" class="navbar-link">Utilities</a></li>
+    </ul>
+    <div class="navbar-actions">
+      <button class="btn btn-sm btn-secondary" onclick="toggleTheme()">Theme</button>
+    </div>
+  </nav>
+
+  <!-- ========== MAIN CONTAINER ========== -->
+  <div class="container container-lg">
+
+    <!-- ========== BUTTONS SECTION ========== -->
+    <section class="section" id="buttons">
+      <h2 class="section-title">Buttons</h2>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Solid variants</h3>
+        <div class="spacer-md"></div>
+        <div class="flex flex-wrap gap-3">
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-secondary">Secondary</button>
+          <button class="btn btn-danger">Danger</button>
+          <button class="btn btn-success">Success</button>
+          <button class="btn btn-info">Info</button>
+          <button class="btn btn-warning">Warning</button>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Outline variants</h3>
+        <div class="spacer-md"></div>
+        <div class="flex flex-wrap gap-3">
+          <button class="btn btn-outline btn-primary">Outline Primary</button>
+          <button class="btn btn-outline btn-secondary">Outline Secondary</button>
+          <button class="btn btn-outline btn-danger">Outline Danger</button>
+          <button class="btn btn-outline btn-success">Outline Success</button>
+          <button class="btn btn-outline btn-info">Outline Info</button>
+          <button class="btn btn-outline btn-warning">Outline Warning</button>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Text variants</h3>
+        <div class="spacer-md"></div>
+        <div class="flex flex-wrap gap-3">
+          <button class="btn btn-text btn-primary">Text Primary</button>
+          <button class="btn btn-text btn-secondary">Text Secondary</button>
+          <button class="btn btn-text btn-danger">Text Danger</button>
+          <button class="btn btn-text btn-success">Text Success</button>
+          <button class="btn btn-text btn-info">Text Info</button>
+          <button class="btn btn-text btn-warning">Text Warning</button>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Sizes</h3>
+        <div class="spacer-md"></div>
+        <div class="flex flex-wrap gap-3 items-center">
+          <button class="btn btn-sm btn-primary">Small</button>
+          <button class="btn btn-primary">Normal</button>
+          <button class="btn btn-lg btn-primary">Large</button>
+          <button class="btn btn-xl btn-primary">Extra Large</button>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">States</h3>
+        <div class="spacer-md"></div>
+        <div class="flex flex-wrap gap-3">
+          <button class="btn btn-primary" disabled>Disabled</button>
+          <button class="btn btn-loading btn-primary">Loading</button>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Button group</h3>
+        <div class="spacer-md"></div>
+        <div class="btn-group">
+          <button class="btn btn-primary">Previous</button>
+          <button class="btn btn-secondary">Page 1</button>
+          <button class="btn btn-secondary">Page 2</button>
+          <button class="btn btn-primary">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CARDS SECTION ========== -->
+    <section class="section" id="cards">
+      <h2 class="section-title">Cards</h2>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Basic variantes</h3>
+        <div class="spacer-md"></div>
+        <div class="card-grid-3">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-header-title">Simple card</h3>
+            </div>
+            <div class="card-body">
+              <p class="text-secondary">This is a standard card with header and body.</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-sm btn-primary">Action</button>
+            </div>
+          </div>
+
+          <div class="divider divider-blank divider-sm"></div>
+
+          <div class="card card-elevated">
+            <div class="card-header">
+              <h3 class="card-header-title">Elevated card</h3>
+            </div>
+            <div class="card-body">
+              <p class="text-secondary">Card with elevated shadow.</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-sm btn-success">Action</button>
+            </div>
+          </div>
+
+          <div class="divider divider-blank divider-md"></div>
+
+          <div class="card card-filled">
+            <div class="card-header">
+              <h3 class="card-header-title">Filled card</h3>
+            </div>
+            <div class="card-body">
+              <p class="text-secondary">Card with filled background.</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-sm btn-info">Action</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Cards with icons</h3>
+        <div class="spacer-md"></div>
+        <div class="card-grid-3">
+          <div class="card card-with-icon">
+            <div class="card-icon">⚡</div>
+            <div class="card-content">
+              <h3>Fast</h3>
+              <p>Optimised and efficient performance for all cases.</p>
+            </div>
+          </div>
+
+          <div class="divider divider-blank divider-lg"></div>
+
+          <div class="card card-with-icon">
+            <div class="card-icon">🎨</div>
+            <div class="card-content">
+              <h3>Modern</h3>
+              <p>Clean, contemporary design with gradients.</p>
+            </div>
+          </div>
+
+          <div class="divider divider-blank divider-xl"></div>
+
+          <div class="card card-with-icon">
+            <div class="card-icon">✨</div>
+            <div class="card-content">
+              <h3>Flexible</h3>
+              <p>Customizable and easy to extend.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== STATISTICS SECTION ========== -->
+    <section class="section">
+      <h2 class="section-title">Stats</h2>
+
+      <div class="spacer-md"></div>
+      <div class="stat-grid-4">
+        <div class="stat-card">
+          <div class="stat-icon">📊</div>
+          <div class="stat-value">2.5M</div>
+          <div class="stat-label">Active users</div>
+          <div class="stat-trend positive">↑ 12.5%</div>
+        </div>
+
+        <div class="divider divider-blank"></div>
+
+        <div class="stat-card">
+          <div class="stat-icon">💰</div>
+          <div class="stat-value">$45K</div>
+          <div class="stat-label">Monthly Income</div>
+          <div class="stat-trend positive">↑ 8.2%</div>
+        </div>
+
+        <div class="divider divider-blank"></div>
+
+        <div class="stat-card">
+          <div class="stat-icon">📈</div>
+          <div class="stat-value">156</div>
+          <div class="stat-label">Conversions</div>
+          <div class="stat-trend negative">↓ 3.1%</div>
+        </div>
+
+        <div class="divider divider-blank"></div>
+
+        <div class="stat-card">
+          <div class="stat-icon">⏱️</div>
+          <div class="stat-value">2.3s</div>
+          <div class="stat-label">Average Time</div>
+          <div class="stat-trend positive">↑ 5.4%</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== AVATARS SECTION ========== -->
+    <section class="section">
+      <h2 class="section-title">Avatars</h2>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Sizes</h3>
+        <div class="spacer-md"></div>
+        <div class="flex flex-wrap gap-4 items-center">
+          <div class="avatar avatar-xs">AB</div>
+          <div class="avatar avatar-sm">CD</div>
+          <div class="avatar avatar-md">EF</div>
+          <div class="avatar avatar-lg">GH</div>
+          <div class="avatar avatar-xl">IJ</div>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Color Variants</h3>
+        <div class="spacer-md"></div>
+        <div class="flex flex-wrap gap-3">
+          <div class="avatar avatar-md avatar-primary">PR</div>
+          <div class="avatar avatar-md avatar-success">SU</div>
+          <div class="avatar avatar-md avatar-danger">DA</div>
+          <div class="avatar avatar-md avatar-info">IN</div>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Avatar Group</h3>
+        <div class="spacer-md"></div>
+        <div class="avatar-group">
+          <div class="avatar avatar-md">AB</div>
+          <div class="avatar avatar-md">CD</div>
+          <div class="avatar avatar-md">EF</div>
+          <div class="avatar avatar-md">GH</div>
+          <div class="avatar avatar-md">+5</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BADGES SECTION ========== -->
+    <section class="section">
+      <h2 class="section-title">Badges</h2>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Color Variants</h3>
+        <div class="spacer-md"></div>
+        <div class="flex flex-wrap gap-3">
+          <span class="badge badge-primary">Primary</span>
+          <span class="badge badge-secondary">Secondary</span>
+          <span class="badge badge-success">Success</span>
+          <span class="badge badge-danger">Danger</span>
+          <span class="badge badge-info">Info</span>
+          <span class="badge badge-warning">Warning</span>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Solid Variants</h3>
+        <div class="spacer-md"></div>
+        <div class="flex flex-wrap gap-3">
+          <span class="badge badge-solid badge-primary">Primary</span>
+          <span class="badge badge-solid badge-success">Success</span>
+          <span class="badge badge-solid badge-danger">Danger</span>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">With Point of Order</h3>
+        <div class="spacer-md"></div>
+        <div class="flex flex-wrap gap-3">
+          <span class="badge badge-dot badge-primary">Online</span>
+          <span class="badge badge-dot badge-success">Active</span>
+          <span class="badge badge-dot badge-danger">Inactive</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ALERTS SECTION ========== -->
+    <section class="section">
+      <h2 class="section-title">Alerts</h2>
+
+      <div class="demo-section">
+        <div class="alert alert-info">
+          <div class="alert-content">
+            <div class="alert-title">Information</div>
+            <p>This is an informational message for the user with more details.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer-md"></div>
+
+      <div class="demo-section">
+        <div class="alert alert-success">
+          <div class="alert-content">
+            <div class="alert-title">Success</div>
+            <p>The operation was completed successfully without any problems.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer-md"></div>
+
+      <div class="demo-section">
+        <div class="alert alert-warning">
+          <div class="alert-content">
+            <div class="alert-title">Warning</div>
+            <p>Please pay attention to this important warning.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer-md"></div>
+
+      <div class="demo-section">
+        <div class="alert alert-danger">
+          <div class="alert-content">
+            <div class="alert-title">Error</div>
+            <p>Something went wrong. Please try again later.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROGRESS SECTION ========== -->
+    <section class="section">
+      <h2 class="section-title">Progress Bars</h2>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Basic (60%)</h3>
+        <div class="spacer-md"></div>
+        <div class="progress">
+          <div class="progress-bar" data-width="60"></div>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">With colors</h3>
+        <div class="spacer-md"></div>
+        <div class="mb-3">
+          <div class="progress progress-primary">
+            <div class="progress-bar" data-width="40"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="progress progress-success">
+            <div class="progress-bar" data-width="70"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="progress progress-danger">
+            <div class="progress-bar" data-width="30"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Animated</h3>
+        <div class="spacer-md"></div>
+        <div class="progress progress-striped progress-animated">
+          <div class="progress-bar" data-width="85"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SPINNERS SECTION ========== -->
+    <section class="section">
+      <h2 class="section-title">Charge Indicators</h2>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Sizes</h3>
+        <div class="spacer-md"></div>
+        <div class="flex flex-wrap gap-6 items-center">
+          <div class="spinner spinner-sm"></div>
+          <div class="spinner spinner-md"></div>
+          <div class="spinner spinner-lg"></div>
+          <div class="spinner spinner-xl"></div>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Colors</h3>
+        <div class="spacer-md"></div>
+        <div class="flex flex-wrap gap-6 items-center">
+          <div class="spinner spinner-md spinner-primary"></div>
+          <div class="spinner spinner-md spinner-success"></div>
+          <div class="spinner spinner-md spinner-danger"></div>
+          <div class="spinner spinner-md spinner-info"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PAGINATION SECTION ========== -->
+    <section class="section">
+      <h2 class="section-title">Pagination</h2>
+
+      <div class="demo-section">
+        <ul class="pagination">
+          <li class="pagination-item disabled"><a href="#">Previous</a></li>
+          <li class="pagination-item active"><a href="#">1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">4</a></li>
+          <li class="pagination-item"><a href="#">Next</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== BREADCRUMBS SECTION ========== -->
+    <section class="section">
+      <h2 class="section-title">Breadcrumbs</h2>
+
+      <div class="demo-section">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Products</a></li>
+          <li class="breadcrumb-item"><a href="#">Category</a></li>
+          <li class="breadcrumb-item active">Current Product</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== TABS SECTION ========== -->
+    <section>
+      <h2 class="section-title">Tabs</h2>
+
+      <div class="demo-section">
+        <div class="tabs">
+          <div class="tabs-header">
+            <button class="tab active" onclick="switchTab(event)">Tab 1</button>
+            <button class="tab" onclick="switchTab(event)">Tab 2</button>
+            <button class="tab" onclick="switchTab(event)">Tab 3</button>
+          </div>
+          <div class="tabs-content">
+            <div class="tab-panel active">
+              <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="tab-panel">
+              <p class="text-secondary">Consectetur adipiscing elit.</p>
+            </div>
+            <div class="tab-panel">
+              <p class="text-secondary">Sed do eiusmod tempor incididunt.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FORMS SECTION ========== -->
+    <section class="section" id="forms">
+      <h2 class="section-title">Forms</h2>
+
+      <div class="demo-section form-center">
+        <div class="form-container form-sm">
+          <div class="form-section">
+            <h3 class="form-section-title">Contact Information</h3>
+            <p class="form-section-description">Fill in the fields to get in touch.</p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="required">Name</label>
+                <input type="text" placeholder="Your full name">
+                <span class="form-help">Enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label class="required">Email</label>
+                <input type="email" placeholder="your@email.com">
+                <span class="form-help">Enter a valid email address.</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="required">Message</label>
+              <textarea placeholder="Your message here..." rows="5"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="checkbox-item">
+                <input type="checkbox" checked>
+                <span>I accept the terms and conditions</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-secondary">Cancel</button>
+            <button class="btn btn-primary">Send Message</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Entry Groups</h3>
+        <div class="spacer-md"></div>
+        <div class="form-group max-w-400">
+          <label>Website URL</label>
+          <div class="input-group">
+            <span class="input-group-prefix">https://</span>
+            <input type="text" placeholder="example.com">
+          </div>
+        </div>
+
+        <div class="spacer-md"></div>
+
+        <div class="form-group max-w-400">
+          <label>Amount</label>
+          <div class="input-group">
+            <span class="input-group-prefix">$</span>
+            <input type="number" placeholder="0.00">
+            <span class="input-group-suffix">.00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TABLES SECTION ========== -->
+    <section class="section" id="tables">
+      <h2 class="section-title">Tables</h2>
+
+      <div class="demo-section">
+        <div class="table-container">
+          <table class="table-hover">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#001</td>
+                <td>John Smith</td>
+                <td>john@example.com</td>
+                <td><span class="badge badge-solid badge-success">Active</span></td>
+                <td>
+                  <div class="table-actions">
+                    <button class="btn btn-sm btn-secondary">Edit</button>
+                    <button class="btn btn-sm btn-danger">Delete</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>#002</td>
+                <td>Mary Johnson</td>
+                <td>mary@example.com</td>
+                <td><span class="badge badge-solid badge-success">Active</span></td>
+                <td>
+                  <div class="table-actions">
+                    <button class="btn btn-sm btn-secondary">Edit</button>
+                    <button class="btn btn-sm btn-danger">Delete</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>#003</td>
+                <td>Charles Brown</td>
+                <td>charles@example.com</td>
+                <td><span class="badge badge-solid badge-danger">Inactive</span></td>
+                <td>
+                  <div class="table-actions">
+                    <button class="btn btn-sm btn-secondary">Edit</button>
+                    <button class="btn btn-sm btn-danger">Delete</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== UTILITIES SECTION ========== -->
+    <section class="section" id="utilities">
+      <h2 class="section-title">Utilities</h2>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Flexbox</h3>
+        <div class="spacer-md"></div>
+        <div class="flex items-center justify-between bg-tertiary p-4 rounded-lg">
+          <span>Flex Container</span>
+          <span>Distributed Elements</span>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Grid</h3>
+        <div class="spacer-md"></div>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="bg-primary p-4 rounded-lg text-primary text-center">Column 1</div>
+          <div class="bg-accent-primary p-4 rounded-lg text-primary text-center">Column 2</div>
+          <div class="bg-success p-4 rounded-lg text-white text-center">Column 3</div>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Spacing</h3>
+        <div class="spacer-md"></div>
+        <div class="flex flex-col gap-3">
+          <div class="bg-accent-primary p-2 rounded-sm text-primary text-xs">Padding 2</div>
+          <div class="bg-accent-primary p-4 rounded-sm text-primary text-xs">Padding 4</div>
+          <div class="bg-accent-primary p-6 rounded-sm text-primary text-xs">Padding 6</div>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Typography</h3>
+        <div class="spacer-md"></div>
+        <p class="text-xs">text-xs - Very small text</p>
+        <p class="text-sm">text-sm - Small text</p>
+        <p class="text-base">text-base - Normal text</p>
+        <p class="text-lg">text-lg - Large text</p>
+        <p class="text-2xl">text-2xl - Very large text</p>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Text Colors</h3>
+        <div class="spacer-md"></div>
+        <p class="text-primary">text-primary - Primary color</p>
+        <p class="text-secondary">text-secondary - Secondary color</p>
+        <p class="text-muted">text-muted - Muted color</p>
+        <p class="text-danger">text-danger - Danger color</p>
+        <p class="text-success">text-success - Success color</p>
+        <p class="text-info">text-info - Information color</p>
+        <p class="text-warning">text-warning - Warning color</p>
+        <p class="text-accent">text-accent - Accent color</p>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Backgrounds</h3>
+        <div class="spacer-md"></div>
+        <div class="flex flex-wrap gap-3">
+          <div class="bg-primary p-4 rounded-md text-primary text-xs text-center flex-1 min-w-150">bg-primary</div>
+          <div class="bg-secondary p-4 rounded-md text-primary text-xs text-center flex-1 min-w-150">bg-secondary</div>
+          <div class="bg-tertiary p-4 rounded-md text-primary text-xs text-center flex-1 min-w-150">bg-tertiary</div>
+          <div class="bg-success p-4 rounded-md text-white text-xs text-center flex-1 min-w-150">bg-success</div>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Sombras</h3>
+        <div class="spacer-md"></div>
+        <div class="flex flex-wrap gap-4">
+          <div class="shadow-sm p-4 rounded-md bg-secondary">shadow-sm</div>
+          <div class="shadow p-4 rounded-md bg-secondary">shadow</div>
+          <div class="shadow-lg p-4 rounded-md bg-secondary">shadow-lg</div>
+          <div class="shadow-xl p-4 rounded-md bg-secondary">shadow-xl</div>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Borders</h3>
+        <div class="spacer-md"></div>
+        <div class="flex flex-wrap gap-3">
+          <div class="border p-4 rounded-md">border</div>
+          <div class="border-t p-4 rounded-md">border-t</div>
+          <div class="border-b p-4 rounded-md">border-b</div>
+          <div class="border-l p-4 rounded-md">border-l</div>
+        </div>
+      </div>
+
+      <div class="divider-lg"></div>
+
+      <div class="demo-section">
+        <h3 class="section-subtitle">Border Radius Customizable</h3>
+        <div class="spacer-md"></div>
+        <div class="flex flex-wrap gap-4">
+          <div class="rounded-none p-4 bg-accent text-white text-xs text-center">rounded-none</div>
+          <div class="rounded-sm p-4 bg-accent text-white text-xs text-center">rounded-sm</div>
+          <div class="rounded-md p-4 bg-accent text-white text-xs text-center">rounded-md</div>
+          <div class="rounded-lg p-4 bg-accent text-white text-xs text-center">rounded-lg</div>
+          <div class="rounded-full p-4 bg-accent text-white text-xs text-center">rounded-full</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ========== TOAST DEMO ========== -->
+  <div class="toast-container toast-container-top-right">
+    <div class="toast toast-success">
+      <div class="toast-content">
+        <div class="toast-title">Success</div>
+        <div class="toast-message">Your message was sent successfully..</div>
+      </div>
+      <button class="toast-close" onclick="closeToast(this)">×</button>
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const current = document.body.dataset.theme;
+      document.body.dataset.theme = current === 'light' ? '' : 'light';
+    }
+
+    function switchTab(event) {
+      const tab = event.target;
+      const tabs = tab.parentElement.querySelectorAll('.tab');
+      const panels = tab.parentElement.parentElement.querySelectorAll('.tab-panel');
+
+      tabs.forEach(t => t.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+
+      const index = Array.from(tabs).indexOf(tab);
+      tab.classList.add('active');
+      panels[index].classList.add('active');
+    }
+
+    function closeToast(btn) {
+      const toast = btn.parentElement;
+      toast.classList.add('closing');
+      toast.addEventListener('animationend', () => toast.remove());
+    }
+
+    document.querySelectorAll('.navbar-link').forEach(link => {
+      link.addEventListener('click', function() {
+        document.querySelectorAll('.navbar-link').forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    document.querySelectorAll('.progress-bar').forEach(bar => {
+      const width = bar.getAttribute('data-width');
+      bar.style.width = width + '%';
+    });
+  </script>
+
+</body>
+</html>

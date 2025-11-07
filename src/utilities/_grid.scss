@@ -1,0 +1,83 @@
+/* ---- GRID ---- */
+.grid {
+  display: grid;
+}
+
+/* ---- GRID AUTO FLOW ---- */
+$flows: row, column, dense;
+@each $flow in $flows {
+  .grid-flow-#{$flow} {
+    grid-auto-flow: $flow;
+  }
+}
+
+/* ---- GRID COLUMNS / ROWS ---- */
+@function repeat-fr($n) {
+  @return repeat($n, minmax(0, 1fr));
+}
+
+$col-range: 1, 2, 3, 4, 5, 6, 9, 12;
+@each $i in $col-range {
+  .grid-cols-#{$i} {
+    grid-template-columns: repeat-fr($i);
+  }
+}
+
+$row-range: 1, 2, 3, 4;
+@each $i in $row-range {
+  .grid-rows-#{$i} {
+    grid-template-rows: repeat-fr($i);
+  }
+}
+
+/* ---- GRID AUTO ---- */
+$auto-types: (
+  cols: (min, max, fr),
+  rows: (min, max, fr)
+);
+
+@each $type, $options in $auto-types {
+  @each $opt in $options {
+    .auto-#{$type}-#{$opt} {
+      grid-auto-#{$type}: if($opt == fr, minmax(0, 1fr), #{$opt}-content);
+    }
+  }
+}
+
+/* ---- GAPS ---- */
+$gap-map: (
+  1: var(--spacing-xs),
+  2: var(--spacing-sm),
+  3: var(--spacing-md),
+  4: var(--spacing-lg),
+  5: var(--spacing-xl)
+);
+
+@each $k, $v in $gap-map {
+  .gap-#{$k} {
+    gap: $v;
+  }
+  .gap-x-#{$k} {
+    column-gap: $v;
+  }
+  .gap-y-#{$k} {
+    row-gap: $v;
+  }
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 768px) {
+  @each $i in (2, 3, 4, 5, 6) {
+    .grid-cols-#{$i} {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  @each $i in (2, 3, 4, 5, 6) {
+    .grid-cols-#{$i} {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+}
