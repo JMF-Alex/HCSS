@@ -55,23 +55,25 @@
               <h2 class="pb-4 border-b-2 border-color">Spacing</h2>
               <p>Control margin, padding, and gaps with standardized spacing scale.</p>
               
+              <!-- Margin -->
               <h4 class="mt-6 mb-4 text-accent-primary">Margin Classes</h4>
               <div class="grid grid-cols-9 gap-2 mb-6">
-                <div class="bg-primary border rounded text-pimary p-2 m-0">.m-0</div>
-                <div class="bg-primary border rounded text-pimary p-2 m-1">.m-1</div>
-                <div class="bg-primary border rounded text-pimary p-2 m-2">.m-2</div>
-                <div class="bg-primary border rounded text-pimary p-2 m-3">.m-3</div>
-                <div class="bg-primary border rounded text-pimary p-2 m-4">.m-4</div>
-                <div class="bg-primary border rounded text-pimary p-2 m-5">.m-5</div>
-                <div class="bg-primary border rounded text-pimary p-2 m-6">.m-6</div>
-                <div class="bg-primary border rounded text-pimary p-2 m-7">.m-7</div>
-                <div class="bg-primary border rounded text-pimary p-2 m-8">.m-8</div>
+                <div class="bg-primary border rounded text-primary p-2 m-0">.m-0</div>
+                <div class="bg-primary border rounded text-primary p-2 m-1">.m-1</div>
+                <div class="bg-primary border rounded text-primary p-2 m-2">.m-2</div>
+                <div class="bg-primary border rounded text-primary p-2 m-3">.m-3</div>
+                <div class="bg-primary border rounded text-primary p-2 m-4">.m-4</div>
+                <div class="bg-primary border rounded text-primary p-2 m-5">.m-5</div>
+                <div class="bg-primary border rounded text-primary p-2 m-6">.m-6</div>
+                <div class="bg-primary border rounded text-primary p-2 m-7">.m-7</div>
+                <div class="bg-primary border rounded text-primary p-2 m-8">.m-8</div>
               </div>
 
               <div class="divider"></div>
 
+              <!-- Padding -->
               <h4 class="mt-6 mb-4 text-accent-primary">Padding Classes</h4>
-              <div class="grid grid-cols-9 gap-2 text-center text-sm">
+              <div class="grid grid-cols-9 gap-2 text-center text-sm mb-6">
                 <div class="bg-primary border rounded p-0 text-primary">.p-0</div>
                 <div class="bg-primary border rounded p-1 text-primary">.p-1</div>
                 <div class="bg-primary border rounded p-2 text-primary">.p-2</div>
@@ -81,6 +83,50 @@
                 <div class="bg-primary border rounded p-6 text-primary">.p-6</div>
                 <div class="bg-primary border rounded p-7 text-primary">.p-7</div>
                 <div class="bg-primary border rounded p-8 text-primary">.p-8</div>
+              </div>
+
+              <div class="divider"></div>
+
+              <!-- MX / MY -->
+              <h4 class="mt-6 mb-4 text-accent-primary">Horizontal & Vertical Margin</h4>
+              <div class="grid grid-cols-4 gap-2 mb-6 text-center">
+                <div class="bg-primary border rounded p-2 mx-2 text-primary">.mx-2</div>
+                <div class="bg-primary border rounded p-2 mx-4 text-primary">.mx-4</div>
+                <div class="bg-primary border rounded p-2 my-2 text-primary">.my-2</div>
+                <div class="bg-primary border rounded p-2 my-4 text-primary">.my-4</div>
+              </div>
+
+              <div class="divider"></div>
+
+              <!-- PX / PY -->
+              <h4 class="mt-6 mb-4 text-accent-primary">Horizontal & Vertical Padding</h4>
+              <div class="grid grid-cols-4 gap-2 mb-6 text-center">
+                <div class="bg-primary border rounded px-2 text-primary">.px-2</div>
+                <div class="bg-primary border rounded px-4 text-primary">.px-4</div>
+                <div class="bg-primary border rounded py-2 text-primary">.py-2</div>
+                <div class="bg-primary border rounded py-4 text-primary">.py-4</div>
+              </div>
+
+              <div class="divider"></div>
+
+              <!-- Individual Margins -->
+              <h4 class="mt-6 mb-4 text-accent-primary">Individual Margin Sides</h4>
+              <div class="grid grid-cols-4 gap-2 mb-6 text-center">
+                <div class="bg-primary border rounded p-2 mt-3 text-primary">.mt-3</div>
+                <div class="bg-primary border rounded p-2 mb-3 text-primary">.mb-3</div>
+                <div class="bg-primary border rounded p-2 ml-3 text-primary">.ml-3</div>
+                <div class="bg-primary border rounded p-2 mr-3 text-primary">.mr-3</div>
+              </div>
+
+              <div class="divider"></div>
+
+              <!-- Individual Paddings -->
+              <h4 class="mt-6 mb-4 text-accent-primary">Individual Padding Sides</h4>
+              <div class="grid grid-cols-4 gap-2 text-center">
+                <div class="bg-primary border rounded pt-3 text-primary">.pt-3</div>
+                <div class="bg-primary border rounded pb-3 text-primary">.pb-3</div>
+                <div class="bg-primary border rounded pl-3 text-primary">.pl-3</div>
+                <div class="bg-primary border rounded pr-3 text-primary">.pr-3</div>
               </div>
             </section>
 
@@ -170,6 +216,16 @@
                 <!-- .flex-basis-full -->
                 <div class="bg-primary border border-color rounded p-2 text-accent-primary flex h-16">
                   <div class="bg-accent-primary text-primary flex-basis-full flex items-center justify-center rounded">.flex-basis-full</div>
+                </div>
+
+                <!-- .flex-reverse -->
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary flex h-16">
+                  <div class="bg-accent-primary text-primary flex-reverse flex items-center justify-center rounded">.flex-reverse</div>
+                </div>
+
+                <!-- .flex-col-reverse -->
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary flex h-16">
+                  <div class="bg-accent-primary text-primary flex-col-reverse flex items-center justify-center rounded">.flex-col-reverse</div>
                 </div>
               </div>
 
