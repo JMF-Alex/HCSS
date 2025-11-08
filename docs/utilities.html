@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HCSS Utilities Documentation</title>
-  <link rel="stylesheet" href="/dist/hcss.min.css">
+  <link rel="stylesheet" href="css/hcss.min.css">
 </head>
 <body>
   <div class="flex flex-col min-h-screen">
@@ -313,15 +313,36 @@
               <!-- GRID COLUMNS -->
               <h4 class="mt-6 mb-4 text-accent-primary">Grid Column Classes</h4>
               <div class="grid grid-cols-6 gap-2 text-sm text-center">
-                <!-- grid-cols-* -->
-                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-1 gap-1"><div class="bg-accent-primary text-primary rounded">.grid-cols-1</div></div>
-                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-2 gap-1"><div class="bg-accent-primary text-primary rounded col-span-2">.grid-cols-2</div><div class="bg-accent-primary text-primary rounded">2</div></div>
-                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-3 gap-1"><div class="bg-accent-primary text-primary rounded">.grid-cols-3</div><div class="bg-accent-primary text-primary rounded">2</div><div class="bg-accent-primary text-primary rounded">3</div></div>
-                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-4 gap-1"><div class="bg-accent-primary text-primary rounded">.grid-cols-4</div><div class="bg-accent-primary text-primary rounded">2</div><div class="bg-accent-primary text-primary rounded">3</div><div class="bg-accent-primary text-primary rounded">4</div></div>
-                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-5 gap-1"><div class="bg-accent-primary text-primary rounded col-span-5">.grid-cols-5</div></div>
-                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-6 gap-1"><div class="bg-accent-primary text-primary rounded col-span-6">.grid-cols-6</div></div>
-                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-9 gap-1"><div class="bg-accent-primary text-primary rounded col-span-9">.grid-cols-9</div></div>
-                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-12 gap-1"><div class="bg-accent-primary text-primary rounded col-span-12">.grid-cols-12</div></div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-1 gap-1">
+                  <div class="bg-accent-primary text-primary rounded">.grid-cols-1</div>
+                </div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-2 gap-1">
+                  <div class="bg-accent-primary text-primary rounded col-span-2">.grid-cols-2</div>
+                  <div class="bg-accent-primary text-primary rounded">2</div>
+                </div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-3 gap-1">
+                  <div class="bg-accent-primary text-primary rounded">.grid-cols-3</div>
+                  <div class="bg-accent-primary text-primary rounded">2</div>
+                  <div class="bg-accent-primary text-primary rounded">3</div>
+                </div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-4 gap-1">
+                  <div class="bg-accent-primary text-primary rounded">.grid-cols-4</div>
+                  <div class="bg-accent-primary text-primary rounded">2</div>
+                  <div class="bg-accent-primary text-primary rounded">3</div>
+                  <div class="bg-accent-primary text-primary rounded">4</div>
+                </div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-5 gap-1">
+                  <div class="bg-accent-primary text-primary rounded col-span-5">.grid-cols-5</div>
+                </div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-6 gap-1">
+                  <div class="bg-accent-primary text-primary rounded col-span-6">.grid-cols-6</div>
+                </div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-9 gap-1">
+                  <div class="bg-accent-primary text-primary rounded col-span-9">.grid-cols-9</div>
+                </div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-12 gap-1">
+                  <div class="bg-accent-primary text-primary rounded col-span-12">.grid-cols-12</div>
+                </div>
               </div>
 
               <!-- GRID ROWS -->
@@ -373,7 +394,6 @@
                 <div class="bg-primary border border-color rounded p-2 text-accent-primary grid auto-cols-min gap-1">
                   <div class="bg-accent-primary text-primary rounded">.auto-cols-min</div>
                   <div class="bg-accent-primary text-primary rounded">2</div>
-                  <div class="bg-accent-primary text-primary rounded">3</div>
                 </div>
                 <div class="bg-primary border border-color rounded p-2 text-accent-primary grid auto-cols-max gap-1">
                   <div class="bg-accent-primary text-primary rounded">.auto-cols-max</div>
@@ -412,8 +432,14 @@
               <h4 class="mt-6 mb-4 text-accent-primary">Gap X / Y Classes</h4>
               <div class="grid grid-cols-4 gap-2 text-sm text-center">
                 <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-2 gap-x-1"><div class="bg-accent-primary text-primary rounded">.gap-x-1</div></div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-2 gap-x-2"><div class="bg-accent-primary text-primary rounded">.gap-x-2</div></div>
                 <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-2 gap-x-3"><div class="bg-accent-primary text-primary rounded">.gap-x-3</div></div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-cols-2 gap-x-4"><div class="bg-accent-primary text-primary rounded">.gap-x-4</div></div>
+
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-rows-2 gap-y-1 h-20"><div class="bg-accent-primary text-primary rounded">.gap-y-1</div></div>
                 <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-rows-2 gap-y-2 h-20"><div class="bg-accent-primary text-primary rounded">.gap-y-2</div></div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-rows-2 gap-y-3 h-20"><div class="bg-accent-primary text-primary rounded">.gap-y-3</div></div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-rows-2 gap-y-4 h-20"><div class="bg-accent-primary text-primary rounded">.gap-y-4</div></div>
                 <div class="bg-primary border border-color rounded p-2 text-accent-primary grid grid-rows-2 gap-y-5 h-20"><div class="bg-accent-primary text-primary rounded">.gap-y-5</div></div>
               </div>
             </section>
@@ -424,7 +450,8 @@
             <section id="typography" class="mt-12">
               <h2 class="pb-4 border-b-2 border-color">Typography Utilities</h2>
               <p>Text styling, sizes, and font utilities.</p>
-              
+
+              <!-- FONT SIZE -->
               <h4 class="mt-6 mb-4 text-accent-primary">Font Size</h4>
               <div class="grid grid-cols-6 gap-2 mb-6 text-center">
                 <div class="bg-primary border border-color rounded p-2 text-accent-primary text-xs">.text-xs</div>
@@ -433,10 +460,13 @@
                 <div class="bg-primary border border-color rounded p-2 text-accent-primary text-lg">.text-lg</div>
                 <div class="bg-primary border border-color rounded p-2 text-accent-primary text-xl">.text-xl</div>
                 <div class="bg-primary border border-color rounded p-2 text-accent-primary text-2xl">.text-2xl</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary text-3xl">.text-3xl</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary text-4xl">.text-4xl</div>
               </div>
 
               <div class="divider"></div>
 
+              <!-- FONT WEIGHT -->
               <h4 class="mt-6 mb-4 text-accent-primary">Font Weight</h4>
               <div class="grid grid-cols-6 gap-2 mb-6 text-center text-sm">
                 <div class="bg-primary border border-color rounded p-2 text-accent-primary font-light">.font-light</div>
@@ -449,23 +479,61 @@
 
               <div class="divider"></div>
 
+              <!-- TEXT ALIGN -->
               <h4 class="mt-6 mb-4 text-accent-primary">Text Alignment</h4>
               <div class="grid grid-cols-4 gap-2 text-sm">
-                <div class="bg-primary border border-color rounded p-2 text-accent-primary text-left">
-                  <strong>.text-left</strong><br>
-                </div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary text-left"><strong>.text-left</strong></div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary text-center"><strong>.text-center</strong></div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary text-right"><strong>.text-right</strong></div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary text-justify"><strong>.text-justify</strong></div>
+              </div>
 
-                <div class="bg-primary border border-color rounded p-2 text-accent-primary text-center">
-                  <strong>.text-center</strong><br>
-                </div>
+              <div class="divider"></div>
 
-                <div class="bg-primary border border-color rounded p-2 text-accent-primary text-right">
-                  <strong>.text-right</strong><br>
-                </div>
+              <!-- TEXT DECORATION -->
+              <h4 class="mt-6 mb-4 text-accent-primary">Text Decoration</h4>
+              <div class="grid grid-cols-4 gap-2 text-sm text-center">
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary underline">.underline</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary no-underline">.no-underline</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary line-through">.line-through</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary italic">.italic</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary not-italic">.not-italic</div>
+              </div>
 
-                <div class="bg-primary border border-color rounded p-2 text-accent-primary text-justify">
-                  <strong>.text-justify</strong><br>
-                </div>
+              <div class="divider"></div>
+
+              <!-- TEXT TRANSFORM -->
+              <h4 class="mt-6 mb-4 text-accent-primary">Text Transform</h4>
+              <div class="grid grid-cols-4 gap-2 text-sm text-center">
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary uppercase">.uppercase</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary lowercase">.lowercase</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary capitalize">.capitalize</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary normal-case">.normal-case</div>
+              </div>
+
+              <div class="divider"></div>
+
+              <!-- LINE HEIGHT -->
+              <h4 class="mt-6 mb-4 text-accent-primary">Line Height</h4>
+              <div class="grid grid-cols-3 gap-2 text-sm text-center">
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary leading-tight">.leading-tight</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary leading-normal">.leading-normal</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary leading-relaxed">.leading-relaxed</div>
+              </div>
+
+              <div class="divider"></div>
+
+              <!-- TEXT OVERFLOW -->
+              <h4 class="mt-6 mb-4 text-accent-primary">Text Overflow</h4>
+              <div class="grid grid-cols-4 gap-2 text-sm text-center">
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary truncate">.truncate</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary line-clamp-1">.line-clamp-1</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary line-clamp-2">.line-clamp-2</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary line-clamp-3">.line-clamp-3</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary break-words">.break-words</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary whitespace-nowrap">.whitespace-nowrap</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary whitespace-normal">.whitespace-normal</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent-primary whitespace-pre">.whitespace-pre</div>
               </div>
             </section>
 
@@ -475,48 +543,19 @@
             <section id="colors" class="mt-12">
               <h2 class="pb-4 border-b-2 border-color">Text Color Utilities</h2>
               <p>Text color utilities for different use cases.</p>
-              
+
               <h4 class="mt-6 mb-4 text-accent-primary">Text Colors</h4>
               <div class="grid grid-cols-4 gap-2 text-sm text-center">
-                <div class="bg-primary border border-color rounded p-2 text-primary">
-                  .text-primary
-                </div>
-
-                <div class="bg-primary border border-color rounded p-2 text-secondary">
-                  .text-secondary
-                </div>
-
-                <div class="bg-primary border border-color rounded p-2 text-muted">
-                  .text-muted
-                </div>
-
-                <div class="bg-primary border border-color rounded p-2 text-danger">
-                  .text-danger
-                </div>
-
-                <div class="bg-primary border border-color rounded p-2 text-success">
-                  .text-success
-                </div>
-
-                <div class="bg-primary border border-color rounded p-2 text-info">
-                  .text-info
-                </div>
-
-                <div class="bg-primary border border-color rounded p-2 text-warning">
-                  .text-warning
-                </div>
-
-                <div class="bg-primary border border-color rounded p-2 text-accent">
-                  .text-accent
-                </div>
-
-                <div class="bg-black border border-color rounded p-2 text-white">
-                  .text-white
-                </div>
-
-                <div class="bg-white border border-color rounded p-2 text-black">
-                  .text-black
-                </div>
+                <div class="bg-primary border border-color rounded p-2 text-primary">.text-primary</div>
+                <div class="bg-primary border border-color rounded p-2 text-secondary">.text-secondary</div>
+                <div class="bg-primary border border-color rounded p-2 text-muted">.text-muted</div>
+                <div class="bg-primary border border-color rounded p-2 text-danger">.text-danger</div>
+                <div class="bg-primary border border-color rounded p-2 text-success">.text-success</div>
+                <div class="bg-primary border border-color rounded p-2 text-info">.text-info</div>
+                <div class="bg-primary border border-color rounded p-2 text-warning">.text-warning</div>
+                <div class="bg-primary border border-color rounded p-2 text-accent">.text-accent</div>
+                <div class="bg-black border border-color rounded p-2 text-white">.text-white</div>
+                <div class="bg-white border border-color rounded p-2 text-black">.text-black</div>
               </div>
             </section>
 

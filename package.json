@@ -16,7 +16,7 @@
   "style": "dist/hcss.css",
   "scripts": {
     "build": "sass src/hcss.scss dist/hcss.css --style=expanded && npm run postcss",
-    "build:min": "sass src/hcss.scss dist/hcss.css --style=compressed && npm run postcss",
+    "build:min": "sass src/hcss.scss dist/hcss.css --style=compressed && npm run postcss && copy dist\\hcss.min.css docs\\css\\hcss.min.css",
     "build:modular": "node build-modules.js",
     "postcss": "postcss dist/hcss.css -o dist/hcss.min.css",
     "watch": "sass --watch src/hcss.scss dist/hcss.css --style=expanded"
