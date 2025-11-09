@@ -17,16 +17,19 @@
   "scripts": {
     "build": "sass src/hcss.scss dist/hcss.css --style=expanded && npm run postcss",
     "build:min": "sass src/hcss.scss dist/hcss.css --style=compressed && npm run postcss && copy dist\\hcss.min.css docs\\css\\hcss.min.css",
-    "build:modular": "node build-modules.js",
+    "build:modular": "node --loader ts-node/esm scripts/build-modules.ts",
     "postcss": "postcss dist/hcss.css -o dist/hcss.min.css",
     "watch": "sass --watch src/hcss.scss dist/hcss.css --style=expanded"
   },
   "devDependencies": {
+    "@types/node": "^24.10.0",
     "autoprefixer": "^10.4.21",
     "cssnano": "^7.1.2",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "postcss-import": "^16.1.1",
-    "sass": "^1.93.3"
+    "sass": "^1.93.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
