@@ -1,43 +1,41 @@
+@use "sass:map";
+
+$spacings: (
+  default: var(--spacing-lg),
+  md: var(--spacing-md),
+  sm: var(--spacing-sm)
+);
+
+$container-sizes: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  2xl: 1400px,
+  fluid: 100%
+);
+
 /* ---- CONTAINERS ---- */
 .container {
   width: 100%;
-  padding: 0 var(--spacing-lg);
+  padding: 0 map.get($spacings, default);
 }
 
-.container-sm {
-  max-width: 640px;
-}
-
-.container-md {
-  max-width: 768px;
-}
-
-.container-lg {
-  max-width: 1024px;
-}
-
-.container-xl {
-  max-width: 1280px;
-}
-
-.container-2xl {
-  max-width: 1400px;
-}
-
-.container-fluid {
-  max-width: 100%;
+@each $name, $size in $container-sizes {
+  .container-#{$name} {
+    max-width: $size;
+  }
 }
 
 /* ---- RESPONSIVE ---- */
-
 @media (max-width: 768px) {
   .container {
-    padding: 0 var(--spacing-md);
+    padding: 0 map.get($spacings, md);
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 var(--spacing-sm);
+    padding: 0 map.get($spacings, sm);
   }
 }

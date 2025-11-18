@@ -1,25 +1,17 @@
+@use "sass:map";
+
+$cursor-types: (
+  auto,
+  pointer,
+  default,
+  not-allowed,
+  move,
+  wait
+);
+
 /* ---- CURSORS ---- */
-
-.cursor-auto {
-  cursor: auto;
-}
-
-.cursor-pointer {
-  cursor: pointer;
-}
-
-.cursor-default {
-  cursor: default;
-}
-
-.cursor-not-allowed {
-  cursor: not-allowed;
-}
-
-.cursor-move {
-  cursor: move;
-}
-
-.cursor-wait {
-  cursor: wait;
+@each $cursor in $cursor-types {
+  .cursor-#{$cursor} {
+    cursor: $cursor;
+  }
 }

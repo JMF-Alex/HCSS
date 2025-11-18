@@ -1,164 +1,143 @@
-/* ---- FLEX ---- */
+@use "sass:map";
+
+/* ---- ALING ---- */
+
+$flex-direction: (
+  row: row,
+  col: column,
+  row-reverse: row-reverse,
+  col-reverse: column-reverse
+);
+
+$flex-wrap: (
+  wrap: wrap,
+  nowrap: nowrap
+);
+
+$flex-grow: (
+  1: 1,
+  0: 0
+);
+
+$flex-shrink: (
+  1: 1,
+  0: 0
+);
+
+$flex-basis: (
+  full: 100%
+);
+
+$justify-content: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around,
+  evenly: space-evenly
+);
+
+$align-items: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  baseline: baseline,
+  stretch: stretch
+);
+
+$align-content: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around
+);
+
+$align-self: (
+  auto: auto,
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  baseline: baseline,
+  stretch: stretch
+);
+
+/* ---- UTILITIES ----*/
 
 .flex {
   display: flex;
 }
 
-.flex-col {
-  flex-direction: column;
+// Flex direction
+@each $key, $value in $flex-direction {
+  .flex-#{$key} {
+    flex-direction: $value;
+  }
 }
 
-.flex-row {
-  flex-direction: row;
+// Flex wrap
+@each $key, $value in $flex-wrap {
+  .flex-#{$key} {
+    flex-wrap: $value;
+  }
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
+// Grow
+@each $key, $value in $flex-grow {
+  .flex-grow-#{$key} {
+    flex-grow: $value;
+  }
 }
 
-.flex-nowrap {
-  flex-wrap: nowrap;
+// Shrink
+@each $key, $value in $flex-shrink {
+  .flex-shrink-#{$key} {
+    flex-shrink: $value;
+  }
 }
 
-.flex-reverse {
-  flex-direction: row-reverse;
+// Basis
+@each $key, $value in $flex-basis {
+  .flex-basis-#{$key} {
+    flex-basis: $value;
+  }
 }
 
-.flex-col-reverse {
-  flex-direction: column-reverse;
+// Justify
+@each $key, $value in $justify-content {
+  .justify-#{$key} {
+    justify-content: $value;
+  }
 }
 
-/* ---- FLEX GROW & SHRINK ---- */
-
-.flex-grow {
-  flex-grow: 1;
+// Align items
+@each $key, $value in $align-items {
+  .items-#{$key} {
+    align-items: $value;
+  }
 }
 
-.flex-grow-0 {
-  flex-grow: 0;
+// Align content
+@each $key, $value in $align-content {
+  .content-#{$key} {
+    align-content: $value;
+  }
 }
 
-.flex-shrink {
-  flex-shrink: 1;
+// self
+@each $key, $value in $align-self {
+  .self-#{$key} {
+    align-self: $value;
+  }
 }
 
-.flex-shrink-0 {
-  flex-shrink: 0;
-}
+/* --------------------------
+   ORDER
+---------------------------*/
 
-.flex-basis-full {
-  flex-basis: 100%;
-}
-
-/* ---- JUSTIFY CONTENT ---- */
-
-.justify-start {
-  justify-content: flex-start;
-}
-
-.justify-end {
-  justify-content: flex-end;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
-}
-
-/* ---- ALIGN ITEMS ---- */
-
-.items-start {
-  align-items: flex-start;
-}
-
-.items-end {
-  align-items: flex-end;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.items-baseline {
-  align-items: baseline;
-}
-
-.items-stretch {
-  align-items: stretch;
-}
-
-/* ---- ALIGN CONTENT ---- */
-
-.content-start {
-  align-content: flex-start;
-}
-
-.content-end {
-  align-content: flex-end;
-}
-
-.content-center {
-  align-content: center;
-}
-
-.content-between {
-  align-content: space-between;
-}
-
-.content-around {
-  align-content: space-around;
-}
-
-/* ---- ALIGN SELF ---- */
-
-.self-auto {
-  align-self: auto;
-}
-
-.self-start {
-  align-self: flex-start;
-}
-
-.self-end {
-  align-self: flex-end;
-}
-
-.self-center {
-  align-self: center;
-}
-
-.self-baseline {
-  align-self: baseline;
-}
-
-.self-stretch {
-  align-self: stretch;
-}
-
-/* ---- ORDER ---- */
-
-.order-first {
-  order: -1;
-}
-
-.order-last {
-  order: 9999;
-}
-
-.order-none {
-  order: 0;
-}
+.order-first { order: -1; }
+.order-last { order: 9999; }
+.order-none { order: 0; }
 
 @for $i from 1 through 12 {
   .order-#{$i} {
