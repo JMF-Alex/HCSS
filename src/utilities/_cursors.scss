@@ -9,7 +9,6 @@ $cursor-types: (
   wait
 );
 
-/* ---- CURSORS ---- */
 @each $cursor in $cursor-types {
   .cursor-#{$cursor} {
     cursor: $cursor;

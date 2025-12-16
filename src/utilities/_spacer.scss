@@ -1,0 +1,15 @@
+$spacers: (
+  xs,
+  sm,
+  md,
+  lg,
+  xl,
+  2xl,
+  3xl
+);
+
+@each $size in $spacers {
+  .spacer-#{$size} {
+    height: var(--spacing-#{$size});
+  }
+}

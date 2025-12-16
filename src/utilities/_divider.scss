@@ -1,0 +1,23 @@
+.divider {
+  background-color: var(--border-color, #e5e7eb);
+  border: none;
+  flex-shrink: 0;
+  height: 1px;
+  margin: var(--spacing-lg) 0;
+  width: 100%;
+
+  &::before,
+  &::after {
+    background-color: var(--border-color);
+    content: "";
+    flex: 1;
+    height: 1px;
+  }
+
+  &--thick {
+    &::before,
+    &::after {
+      height: 2px;
+    }
+  }
+}

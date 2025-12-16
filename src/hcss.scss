@@ -4,22 +4,23 @@
 @use "./core/base";
 
 /* ---- UTILITIES IMPORTS ---- */
-@use "./utilities/helpers";
-@use "./utilities/spacing";
+@use "./utilities/backgrounds";
+@use "./utilities/borders";
+@use "./utilities/containers";
+@use "./utilities/cursors";
+@use "./components/dividers";
 @use "./utilities/flexbox";
 @use "./utilities/grid";
-@use "./utilities/text";
-@use "./utilities/text-colors";
-@use "./utilities/backgrounds";
-@use "./utilities/containers";
-@use "./utilities/sections";
-@use "./utilities/layout";
-@use "./utilities/rounded";
-@use "./utilities/borders";
-@use "./utilities/sizing";
-@use "./utilities/shadows";
+@use "./utilities/helpers";
 @use "./utilities/opacity";
-@use "./utilities/cursors";
+@use "./utilities/rounded";
+@use "./utilities/sections";
+@use "./utilities/shadows";
+@use "./utilities/sizing";
+@use "./utilities/spacer";
+@use "./utilities/spacing";
+@use "./utilities/text-colors";
+@use "./utilities/text";
 
 /* ---- COMPONENTS IMPORTS ---- */
 @use "./components/buttons";
@@ -41,4 +42,3 @@
 @use "./components/avatars";
 @use "./components/stats";
 @use "./components/tooltips";
-@use "./components/dividers";

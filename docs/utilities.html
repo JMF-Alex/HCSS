@@ -38,6 +38,8 @@
           <a href="#shadows" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Shadows</a>
           <a href="#containers" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Containers</a>
           <a href="#cursors" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Cursors</a>
+          <a href="#dividers" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Dividers</a>
+          <a href="#spacers" class="block px-5 py-3 text-sm text-primary no-underline hover:bg-tertiary transition-colors border-l-4 border-transparent">Spacers</a>
         </div>
       </aside>
 
@@ -879,7 +881,7 @@
               </div>
             </section>
 
-            <div class="divider primary"></div>
+            <div class="divider divider-primary"></div>
 
             <!-- Containers -->
             <section id="containers" class="mt-12 pb-12">
@@ -935,6 +937,94 @@
                 </div>
                 <div class="cursor-wait bg-primary border rounded p-4 text-center text-sm w-full">
                   .cursor-wait
+                </div>
+              </div>
+            </section>
+
+            <div class="divider divider-primary"></div>
+
+            <!-- Dividers -->
+            <section id="dividers" class="mt-12 pb-12">
+              <h2 class="pb-4 border-b-2 border-color">Dividers</h2>
+              <p>Horizontal line dividers to separate content sections.</p>
+
+              <h4 class="mt-6 mb-4 text-accent-primary">Standard Divider (.divider)</h4>
+              <p class="text-sm text-muted mb-4">A thin horizontal line (1px) with default spacing.</p>
+              <div class="p-6 bg-secondary border rounded mb-6">
+                <p>Content above the divider</p>
+                <div class="divider"></div>
+                <p>Content below the divider</p>
+              </div>
+
+              <div class="divider"></div>
+
+              <h4 class="mt-6 mb-4 text-accent-primary">Thick Divider (.divider-thick)</h4>
+              <p class="text-sm text-muted mb-4">A thicker horizontal line (2px) for more prominent separation.</p>
+              <div class="p-6 bg-secondary border rounded mb-6">
+                <p>Content above the thick divider</p>
+                <div class="divider divider-thick"></div>
+                <p>Content below the thick divider</p>
+              </div>
+            </section>
+
+            <div class="divider divider-primary"></div>
+
+            <!-- Spacers -->
+            <section id="spacers" class="mt-12 pb-12">
+              <h2 class="pb-4 border-b-2 border-color">Spacers</h2>
+              <p>Vertical spacing utilities to create consistent spacing between elements.</p>
+
+              <h4 class="mt-6 mb-4 text-accent-primary">Spacer Classes</h4>
+              <p class="text-sm text-muted mb-6">Use spacer classes to add vertical space with consistent sizing based on your spacing scale.</p>
+              
+              <div class="grid grid-cols-4 gap-4 mb-6">
+                <div>
+                  <div class="bg-primary border rounded p-2 text-center text-sm mb-2">.spacer-xs</div>
+                  <div class="bg-secondary border rounded p-2">Content</div>
+                  <div class="spacer-xs"></div>
+                  <div class="bg-secondary border rounded p-2">Content</div>
+                </div>
+                <div>
+                  <div class="bg-primary border rounded p-2 text-center text-sm mb-2">.spacer-sm</div>
+                  <div class="bg-secondary border rounded p-2">Content</div>
+                  <div class="spacer-sm"></div>
+                  <div class="bg-secondary border rounded p-2">Content</div>
+                </div>
+                <div>
+                  <div class="bg-primary border rounded p-2 text-center text-sm mb-2">.spacer-md</div>
+                  <div class="bg-secondary border rounded p-2">Content</div>
+                  <div class="spacer-md"></div>
+                  <div class="bg-secondary border rounded p-2">Content</div>
+                </div>
+                <div>
+                  <div class="bg-primary border rounded p-2 text-center text-sm mb-2">.spacer-lg</div>
+                  <div class="bg-secondary border rounded p-2">Content</div>
+                  <div class="spacer-lg"></div>
+                  <div class="bg-secondary border rounded p-2">Content</div>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <h4 class="mt-6 mb-4 text-accent-primary">Large Spacers</h4>
+              <div class="grid grid-cols-3 gap-4">
+                <div>
+                  <div class="bg-primary border rounded p-2 text-center text-sm mb-2">.spacer-xl</div>
+                  <div class="bg-secondary border rounded p-2">Content</div>
+                  <div class="spacer-xl"></div>
+                  <div class="bg-secondary border rounded p-2">Content</div>
+                </div>
+                <div>
+                  <div class="bg-primary border rounded p-2 text-center text-sm mb-2">.spacer-2xl</div>
+                  <div class="bg-secondary border rounded p-2">Content</div>
+                  <div class="spacer-2xl"></div>
+                  <div class="bg-secondary border rounded p-2">Content</div>
+                </div>
+                <div>
+                  <div class="bg-primary border rounded p-2 text-center text-sm mb-2">.spacer-3xl</div>
+                  <div class="bg-secondary border rounded p-2">Content</div>
+                  <div class="spacer-3xl"></div>
+                  <div class="bg-secondary border rounded p-2">Content</div>
                 </div>
               </div>
             </section>
